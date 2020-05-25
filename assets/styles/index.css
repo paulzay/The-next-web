@@ -197,5 +197,42 @@ body {
   height: 45%;
   padding: 5rem;
 }
-
+.latest{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.latest1, .latest2{
+  display: flex;
+}
+.art1{
+  margin: 10px;
+}
+.art1 h1{
+  margin-top: 10px;
+  line-height: 1.2em;
+  font-size: 14px;
+}
+.art1 h1:hover{
+  color: #f42;
+  cursor: pointer;
+}
+.art1 p{
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 12px;
+}
+.art1 img{
+  width: 100%;
+  height: 70%;
+}
+.topic{
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.topic:hover{
+  cursor: pointer;
+  color: #f42;
+}
 }
