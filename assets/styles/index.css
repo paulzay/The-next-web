@@ -229,10 +229,60 @@ body {
 .topic{
   margin-left: 10px;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 24px;
 }
 .topic:hover{
   cursor: pointer;
   color: #f42;
+}
+.funding{
+  display: flex;
+  flex-direction: column;
+}
+.f1{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  color:#f42;
+}
+.f1 h1{
+  font-size: 24px;
+}
+.f1 ul{
+  line-height: 1.6em;
+  display: flex;
+}
+.f1 a{
+  color:#f42;
+}
+.f2{
+  display: flex;
+  margin: 0 20px;
+}
+.fund1{
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+}
+.thriva{
+  background-color: #f42;
+  color: #fff;
+  height: 40px;
+}
+.cash{
+  background-color:rgba(255,68,34,.08);
+  height: 60px;
+  color: #131313;
+}
+.cash p{
+  color: #555;
+}
+.fitness{
+  height: 90px;
+  background-color: rgba(236, 130, 112, 0.08);
+}
+.last{
+  height: 30px;
+  background-color:  rgba(236, 130, 112, 0.08);
 }
 }
