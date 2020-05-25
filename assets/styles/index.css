@@ -1,3 +1,6 @@
+* a{
+  text-decoration: none;
+}
 /* Mobile size */
 @media only screen and (max-width: 375px){
   
@@ -10,7 +13,26 @@
 
 /* Laptop and desktop size */
 @media only screen and (min-width: 1024px){
-  /* First nav container */
+  .grid-container-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #131313;
+    font-size: 12px;
+  }
+  
+  .grid-container-1-1 li {
+    display: inline-flex;
+   
+  }
+  .grid-container-1-2 li{
+    display: inline-flex;
+  }
+  .grid-container-1-1 a, .grid-container-1-2 a{
+    color:hsla(0,0%,100%,.6);
+    margin: auto 10px;
+  }
+  /* First nav container 
    nav.grid-container-1 {
     display: inline-flex;
     background-color: #000000;
@@ -29,4 +51,5 @@
   .grid-container-1-2 {
     float: right;
   }
+  */
 }
