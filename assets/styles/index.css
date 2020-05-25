@@ -4,11 +4,29 @@
 }
 
 /* Tablet size */
-@media only screen and (max-width:768px){
+@media only screen and (max-width: 1023px){
 
 }
 
 /* Laptop and desktop size */
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 1024px){
+  /* First nav container */
+   nav.grid-container-1 {
+    display: inline-flex;
+    background-color: #000000;
+    padding: 5rem;
+  }
 
+  nav.grid-container-1 a {
+    color: #999999;
+    text-decoration: none;
+  }
+
+  .grid-container-1-1 {
+    float: left;
+  }
+
+  .grid-container-1-2 {
+    float: right;
+  }
 }
