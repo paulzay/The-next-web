@@ -43,7 +43,7 @@ body {
     border-left:1px solid #999;
     padding-left: 10px;
   }
-  .latest{
+  /* .latest{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -56,11 +56,47 @@ body {
     display: flex;
     background-color: red;
     
+  } */
+
+  /* Grid items */
+  #container-1 {
+    grid-row-start: 1 ;
+    grid-row-end: 2 ;
   }
-  .text{
+
+  #container-2 {
+    grid-row-start: 2 ;
+    grid-row-end: 3 ;
+  }
+
+  #container-3 {
+    grid-row-start: 3 ;
+    grid-row-end: 4 ;
+  }
+
+  #container-4 {
+    grid-row-start: 4 ;
+    grid-row-end: 5 ;
+  }
+
+  #container-1,
+  #container-2,
+  #container-3,
+  #container-4 {
+    grid-column-start: 1 ;
+    grid-column-end: 2 ;
+  }
+
+  .latest.latest1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr) ;
+  }
+
+  /* .text{
     bottom: 0;
     margin-left: 20px;
-  }
+  } */
   .art1{
     margin-top: 10px;
     background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg
