@@ -515,4 +515,15 @@ body {
     margin-right: 10px;
   
   }
+  .popular{
+    display: block;
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg
+    ) no-repeat;
+    height: 200px;
+    width: 100%;
+  }
+  .popular h1{
+    text-align:center;
+    padding: 40px 80px;
+  }
 }
