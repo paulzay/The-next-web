@@ -331,4 +331,107 @@ body {
 .last span {
   color: #999999;
 }
+
+/* Apps, Gears, tech etc section */
+.grid-container-3-1,
+.grid-container-3-2,
+.grid-container-3-3 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.grid-container-3-4,
+.grid-container-3-5,
+.grid-container-3-6 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.grid-container-3-1,
+.grid-container-3-4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.grid-container-3-2,
+.grid-container-3-5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.grid-container-3-3,
+.grid-container-3-6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 9px auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 20px
+}
+
+.red-headings {
+  color: #f42;
+  font-size: 25px;
+}
+
+/* .grid-container-3-image {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/ptl-newsletter-hed-516x270.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+} */
+
+.grid-container-3-image {
+  position: relative;
+}
+
+.heading-container {
+  position: absolute;
+  bottom: 100px;
+  left: 19px;
+  line-height: 20px;
+}
+
+.grey-headings {
+  color: #333333;   
+  font-size: small; 
+}
+
+.dark-grey-headings {
+  color: #333333;   
+  font-size: large; 
+}
+
+.flex-container-4 {
+  background-color: rgb(245, 182, 193);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.05rem;
+}
+
+.flex-container-4-1 h3,
+.flex-container-4-1 p {
+  color: #f42;
+}
+
+.grid-container-3-links li{
+  list-style: circle;
+  border-bottom: 0.1rem solid #999999;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grid-container-3-links li a{
+  color: #000000;
+  font-size: 20px;
+}
+
+.grid-container-3-links li a:hover{
+  color: #999999;
+}
 }
