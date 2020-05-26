@@ -25,6 +25,12 @@ body {
 
 /* Mobile size */
 @media only screen and (max-width: 375px){
+  .grid-container-1-1,
+  .grid-container-1-2,
+  .flex-container-2 .flex-container-1-1 {
+    display: none;
+  }
+
 
 }
 
@@ -41,6 +47,10 @@ body {
     padding: 20px;
     background-color: #131313;
     font-size: 12px;
+  }
+
+  .grid-container-1 img {
+    display: none;
   }
 
   .grid-container-1-1 li {
@@ -81,6 +91,10 @@ body {
     color: #aaa;
     padding-right: 10px;
     border-left: 1px solid #aaa;
+  }
+
+  .srch .menu-bar {
+    display: none;
   }
 
   .flex-container-3 {
