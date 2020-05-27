@@ -51,63 +51,36 @@ body {
   .latest1{
     display: flex;
     flex-direction: column;
+  
   }
   .container{
     display: flex;
-    
-  } 
-
+  }
+  .art1{
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg
+    ) no-repeat;
+    width: 100%;
+  }
+  .art1 img{
+    visibility: hidden;
+    width: 100%;
+  }
+  .art1 {
+    float: left;
+    width: 11vw;
+    height: 11vh;
+    margin: 10px;
+  }
   /* Grid items */
   
-  #container-1 {
-    grid-row-start: 1 ;
-    grid-row-end: 2 ;
-  }
-
-  #container-2 {
-    grid-row-start: 2 ;
-    grid-row-end: 3 ;
-  }
-
-  #container-3 {
-    grid-row-start: 3 ;
-    grid-row-end: 4 ;
-  }
-
-  #container-4 {
-    grid-row-start: 4 ;
-    grid-row-end: 5 ;
-  }
-
-  #container-1,
-  #container-2,
-  #container-3,
-  #container-4 {
-    grid-column-start: 1 ;
-    grid-column-end: 2 ;
-  }
-
-  .latest.latest1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr) ;
-  }
+  
 
   /* .text{
     bottom: 0;
     margin-left: 20px;
   } 
-  .art1{
-    margin-top: 10px;
-    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg
-    )no-repeat center; 
-    width: 100%;
-    display: hidden;
-  }
-  .art1 img{
-    display: hidden;
-    
-  }*/
+  */
+
 }
 
 /* Tablet size */
@@ -576,7 +549,7 @@ body {
     width: 100%;
   }
   .art1 img{
-    display: hidden;
+    visibility: hidden;
     width: 100%;
   }
   .deal{
