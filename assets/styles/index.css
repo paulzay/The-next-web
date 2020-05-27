@@ -43,7 +43,7 @@ body {
     border-left:1px solid #999;
     padding-left: 10px;
   }
-  /* .latest{
+   .latest{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -54,11 +54,11 @@ body {
   }
   .container{
     display: flex;
-    background-color: red;
     
-  } */
+  } 
 
   /* Grid items */
+  
   #container-1 {
     grid-row-start: 1 ;
     grid-row-end: 2 ;
@@ -96,14 +96,18 @@ body {
   /* .text{
     bottom: 0;
     margin-left: 20px;
-  } */
+  } 
   .art1{
     margin-top: 10px;
     background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg
-    )contain;
+    )no-repeat center; 
     width: 100%;
-  
+    display: hidden;
   }
+  .art1 img{
+    display: hidden;
+    
+  }*/
 }
 
 /* Tablet size */
@@ -569,7 +573,10 @@ body {
     position: relative;
     background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg
     ) no-repeat center;
-    height: 150px;
+    width: 100%;
+  }
+  .art1 img{
+    display: hidden;
     width: 100%;
   }
   .deal{
@@ -598,20 +605,36 @@ body {
     padding-top: 30px;
   }
 
-  .socials ul,
+  
   .links ul {
     display: flex;
     justify-content: center;
     padding: 10px;
   }
 
-  .links ul li a,
-  .socials ul li a {
+  .links ul li a
+ {
     color: #fff;
     padding: 10px;
     font-size: 11px;
   }
-
+  .socials ul {
+    display: flex;
+    justify-content: center;
+  }
+  .socials li{
+    margin: auto 5px;
+  }
+  .socials a{
+    display: inline-flex;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 11px;
+  }
   .foot2 {
     display: flex;
     background-color: #000;
