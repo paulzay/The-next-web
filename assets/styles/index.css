@@ -477,32 +477,28 @@ body {
     color: #999;
   }
   .container{
-    margin: auto 10px;
+    margin: auto;
+    display: flex;
   }
   .art1{
     position: relative;
-    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg
-    ) no-repeat center;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg") no-repeat center;
     width: 100%;
+  }
+  .mytext{
+    margin: 10px 0 10px 20px;
+  }
+  .art1-1{
+    margin-top: 10px;
+    position: relative;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg") no-repeat center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
   }
   .art1 img{
     visibility: hidden;
     width: 100%;
-  }
-  .deal{
-    background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: #000;
-    display: block;
-    height: 80px;
-    overflow: hidden;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 80px;
-    z-index: 10;
   }
 
 }
