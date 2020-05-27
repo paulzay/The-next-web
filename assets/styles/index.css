@@ -449,6 +449,27 @@ body {
     font-size: large;
   }
 
+  .grid-container-3-links li {
+    border-bottom: 0.1rem solid #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* (Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bullet_color) */
+  .grid-container-3-links li::before {
+    list-style: circle;
+    content: "\2022";
+    color: #f42;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-shadow: 1px 1px 1px #f42;
+  }
+
   .flex-container-4 {
     background-color: rgb(245, 182, 193);
     display: flex;
@@ -476,6 +497,31 @@ body {
   .grid-container-3-links li a:hover {
     color: #999;
   }
+
+  .grid-container-3-image {
+    margin-top: 13px;
+    position: relative;
+  }
+
+  .heading-container {
+    position: absolute;
+    top: 84px;
+    left: 10px;
+  }
+
+  .heading-container .grey-headings {
+    color: #fff;
+  }
+
+  .heading-container .dark-grey-headings {
+    color: #fff ;
+    font-size: 25px;
+  }
+
+  .heading-container .author-info {
+      color: #666666;
+  }
+
   .container{
     margin: auto;
     display: flex;
