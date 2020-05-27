@@ -413,58 +413,16 @@ body {
   /* Apps, Gears, tech etc section */
 
   /* Grid Rows */
-  .grid-container-3-1,
-  .grid-container-3-2,
-  .grid-container-3-3 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .grid-container-3-4,
-  .grid-container-3-5,
-  .grid-container-3-6 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .grid-container-3-7,
-  .grid-container-3-8,
-  .grid-container-3-9 {
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-
-/* Grid Columns */
-  .grid-container-3-1,
-  .grid-container-3-4,
-  .grid-container-3-7 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  .grid-container-3-2,
-  .grid-container-3-5,
-  .grid-container-3-8 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-  .grid-container-3-3,
-  .grid-container-3-6,
-  .grid-container-3-9 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }
-
   .grid-container-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 9px auto;
-    grid-column-gap: 24px;
-    grid-row-gap: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
   }
-
+  .grid-container-3-1, .grid-container-3-2,
+   .grid-container-3-1,.grid-container-3-4,.grid-container-3-5
+   ,.grid-container-3-6,.grid-container-3-7,.grid-container-3-8{
+    margin-bottom: 20px;
+  }
   .red-headings {
     color: #f42;
     font-size: 25px;
