@@ -545,6 +545,59 @@ body {
     background-position: center;
   }
 
+  footer {
+    background-color: #131313;
+    color: #999;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .socials {
+    padding-top: 30px;
+  }
+
+  
+  .links ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .links ul li a
+ {
+    color: #fff;
+    padding: 10px;
+    font-size: 11px;
+  }
+  .socials ul {
+    display: flex;
+    justify-content: center;
+  }
+  .socials li{
+    margin: auto 5px;
+  }
+  .socials a{
+    display: inline-flex;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 11px;
+  }
+  .foot2 {
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+    padding: 30px;
+    font-size: 12px;
+  }
+  .foot2 span svg{
+    line-height: 2em;
+    width: 40px;
+    margin-right: 10px;
+  }
 
 }
 
