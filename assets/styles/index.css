@@ -24,14 +24,16 @@ body {
 }
 
 /* Mobile size */
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 375px) {
   .grid-container-1-1,
-  .grid-container-1-2,.srch1, .grid-container-1
-  .flex-container-2 ,.flex-container-1-1 {
+  .grid-container-1-2,
+  .srch1,
+  .grid-container-1 .flex-container-2,
+  .flex-container-1-1 {
     display: none;
   }
-  
-  .nav-top{
+
+  .nav-top {
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -45,62 +47,54 @@ body {
   .menu-toggle {
     top: 15px;
     right: 20px;
-    cursor: pointer; 
+    cursor: pointer;
     color: #f42;
     font-size: 10px;
-    border-left:1px solid #999;
+    border-left: 1px solid #999;
     padding-left: 10px;
   }
-   .latest{
+
+  /* .latest {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-  }
-  .latest1{
+  } */
+
+  .latest1 {
     display: flex;
     flex-direction: column;
-  
-  }
-  .container{
-    display: flex;
-  }
-  .art1{
-    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg
-    ) no-repeat;
-    width: 100%;
-  }
-  .art1 img{
-    visibility: hidden;
-    width: 100%;
-  }
-  .art1 {
-    float: left;
-    width: 11vw;
-    height: 11vh;
-    margin: 10px;
   }
 
-  .f1 {
+  .container {
+    display: flex;
+  }
+
+  /* .f1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 29px;
+  } */
+
+  .f1 ul {
+    display: block !important;
+    margin-top: 15px;
   }
 
-    .f1 ul {
-     display: block !important;
-     margin-top: 15px;
-    }
+  /* .flex-container-3 span {
+    position: absolute;
+    top: -2px;
+  } */
 
-    .f1 ul li a span {
-      display: none;
-    }
+  .f1 ul li a span {
+    display: none;
+  }
 
   .fund-1-1 {
-    grid-row-start: 1 ;
+    grid-row-start: 1;
     grid-row-end: 2;
   }
-  
+
   .fund-1-2 {
     grid-row-start: 2;
     grid-row-end: 3;
@@ -120,10 +114,10 @@ body {
   .fund-1-2,
   .fund-1-3,
   .fund-1-4 {
-    grid-column-start: 1 ;
+    grid-column-start: 1;
     grid-column-end: 2;
   }
-  
+
   .funding .f2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -132,6 +126,7 @@ body {
     max-width: 375px;
     margin: 5px auto;
   }
+
   .grid-container-1 {
     display: flex;
     justify-content: space-between;
@@ -156,11 +151,6 @@ body {
   .grid-container-1-2 a {
     color: hsla(0, 0%, 100%, 0.6);
     margin: auto 10px;
-  }
-
-  .flex-container-2 {
-    display: flex;
-    justify-content: space-between;
   }
 
   .flex-container-1-1 li {
@@ -205,90 +195,89 @@ body {
     padding-left: 30px;
   }
 
-  .flex-container-3 a {
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    color: #131313;
-    font-size: 9px;
-  }
-
-  .flex-container-3 span {
-    position: absolute;
-    top: -8px;
-  }
-
-  .grid-container-2{
+  .grid-container-2 {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-.first{
-  height: 30vh;
-  transition: background-color .4s ease;
-  background: linear-gradient(rgba(255, 31, 42, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%),url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c")no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 10px;
-  color: #fff;
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 20px;
-  align-items: flex-end;
-  font-size: 20px;
-  line-height: 1.2em;
-}
-.topnews{
-  display: none;
- 
-}
-.topnews p{
-  font-size: 14px;
-}
-.botnews h1{
- font-weight: 100;
- margin-top: 30px;
-}
-.botnews h2{
-  font-size: 20px;
-}
-.botnews p{
-  font-size: 12px;
-  vertical-align: middle;
-  bottom: 0;
-}
-.botnews i {
-  vertical-align: middle;
-  margin: auto 10px;
-}
-.side{
-  display: flex;
-  flex-direction: column;
-  margin: auto 10px;
-}
-.second{
-  background:url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")no-repeat;
-  height: 30vh;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 10px;
-}
-.third{
-  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg")no-repeat;
-  height: 30vh;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 10px;
-}
-.second, .third{
-  color: #fff;
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 20px;
-  align-items: flex-end;
-  font-size: 20px;
-  line-height: 1.2em;
-}
+
+  .first {
+    height: 30vh;
+    transition: background-color 0.4s ease;
+    background: linear-gradient(rgba(255, 31, 42, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%), url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c") no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    align-items: flex-end;
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  .topnews {
+    display: none;
+  }
+
+  .topnews p {
+    font-size: 14px;
+  }
+
+  .botnews h1 {
+    font-weight: 100;
+    margin-top: 30px;
+  }
+
+  .botnews h2 {
+    font-size: 20px;
+  }
+
+  .botnews p {
+    font-size: 12px;
+    vertical-align: middle;
+    bottom: 0;
+  }
+
+  .botnews i {
+    vertical-align: middle;
+    margin: auto 10px;
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    margin: auto 10px;
+  }
+
+  .second {
+    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+
+  .third {
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg") no-repeat;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+
+  .second,
+  .third {
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    align-items: flex-end;
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
   /* Latest section */
   .latest {
     display: flex;
@@ -306,6 +295,10 @@ body {
     margin-top: 10px;
     line-height: 1.2em;
     font-size: 14px;
+  }
+
+  .f1 h1 {
+    font-size: 24px;
   }
 
   .container h1:hover {
@@ -338,23 +331,10 @@ body {
     color: #f42;
   }
 
-  .f1 h1 {
-    font-size: 24px;
-  }
-
-  .f1 ul {
+  /* .f1 ul {
     line-height: 1.6em;
     display: flex;
-  }
-
-  .f1 a {
-    color: #f42;
-  }
-
-  .f2 {
-    display: flex;
-    margin: 0 20px;
-  }
+  } */
 
   .fund1 {
     display: flex;
@@ -424,9 +404,7 @@ body {
     font-size: 14px;
   }
 
-  .last span {
-    color: #999;
-  }
+
 
   /* Apps, Gears, tech etc section */
 
@@ -436,11 +414,17 @@ body {
     flex-direction: column;
     margin: 30px;
   }
-  .grid-container-3-1, .grid-container-3-2,
-   .grid-container-3-1,.grid-container-3-4,.grid-container-3-5
-   ,.grid-container-3-6,.grid-container-3-7,.grid-container-3-8{
+
+  .grid-container-3-1,
+  .grid-container-3-2,
+  .grid-container-3-4,
+  .grid-container-3-5,
+  .grid-container-3-6,
+  .grid-container-3-7,
+  .grid-container-3-8 {
     margin-bottom: 20px;
   }
+
   .red-headings {
     color: #f42;
     font-size: 25px;
@@ -479,7 +463,7 @@ body {
     content: "\2022";
     color: #f42;
     font-weight: bold;
-    display: inline-block; 
+    display: inline-block;
     width: 1em;
     margin-left: -1em;
     border: none;
@@ -500,12 +484,12 @@ body {
     color: #f42;
   }
 
-  .grid-container-3-links li {
+  /* .grid-container-3-links li {
     list-style: circle;
     border-bottom: 0.1rem solid #999;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+  } */
 
   .grid-container-3-links li a {
     color: #000;
@@ -517,7 +501,7 @@ body {
   }
 
   .grid-container-3-image {
-    background:url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")no-repeat;
+    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
     top: 0;
     right: 0;
     width: 100%;
@@ -538,28 +522,31 @@ body {
   }
 
   .heading-container .dark-grey-headings {
-    color: #fff ;
+    color: #fff;
     font-size: 25px;
   }
 
   .heading-container .author-info {
-      color: #666666;
+    color: #666;
   }
 
-  .container{
+  .container {
     display: flex;
-
     width: 100%;
   }
-  .art1-1 img{
+
+  .art1-1 img {
     visibility: hidden;
     width: 100%;
     height: 20vh;
   }
-  .mytext, .text{
+
+  .mytext,
+  .text {
     margin: 10px 0 10px 20px;
   }
-  .art1-1{
+
+  .art1-1 {
     margin-top: 10px;
     position: relative;
     background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg") no-repeat center;
@@ -579,27 +566,28 @@ body {
     padding-top: 30px;
   }
 
-  
   .links ul {
     display: flex;
     justify-content: center;
     padding: 10px;
   }
 
-  .links ul li a
- {
+  .links ul li a {
     color: #fff;
     padding: 10px;
     font-size: 11px;
   }
+
   .socials ul {
     display: flex;
     justify-content: center;
   }
-  .socials li{
+
+  .socials li {
     margin: auto 5px;
   }
-  .socials a{
+
+  .socials a {
     display: inline-flex;
     background-color: #333;
     border: 2px solid #333;
@@ -609,6 +597,7 @@ body {
     padding: 10px;
     font-size: 11px;
   }
+
   .foot2 {
     display: flex;
     background-color: #000;
@@ -616,22 +605,30 @@ body {
     padding: 30px;
     font-size: 12px;
   }
-  .foot2 span svg{
+
+  .foot2 span svg {
     line-height: 2em;
     width: 40px;
     margin-right: 10px;
   }
-
 }
 
 /* Tablet size */
-@media only screen and (min-width: 376px) and (max-width: 767px){
+@media only screen and (min-width: 376px) and (max-width: 767px) {
+  .flex-container-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .grid-container-1-1,
-  .grid-container-1-2,.srch1, .grid-container-1
-  .flex-container-2 ,.flex-container-1-1 {
+  .grid-container-1-2,
+  .srch1,
+  .grid-container-1 .flex-container-2,
+  .flex-container-1-1 {
     display: none;
   }
-  .nav-top{
+
+  .nav-top {
     display: flex;
     justify-content: space-between;
     display: flex;
@@ -652,10 +649,10 @@ body {
   .menu-toggle {
     top: 15px;
     right: 20px;
-    cursor: pointer; 
+    cursor: pointer;
     color: #f42;
     font-size: 10px;
-    border-left:1px solid #999;
+    border-left: 1px solid #999;
     padding-left: 10px;
   }
 
@@ -679,7 +676,28 @@ body {
     z-index: 1;
   }
 
-  div.flex-container-3 { position: fixed; top: 36px; left: 0; right: 0; z-index: 1; } .flex-container-3 { /* position: relative; */ background-color: yellow; height: 40px; color: #131313; padding-left: 30px; display: flex; justify-content: center; } .flex-container-3 a { /* position: absolute; top: 15px; left: 250px; */ padding-top: 15px; color: #131313; font-size: 9px; } .flex-container-3 span { position: absolute; top: 8px; } 
+  div.flex-container-3 {
+    position: fixed;
+    top: 36px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .flex-container-3 {
+    /* position: relative; */
+    background-color: yellow;
+    height: 40px;
+    color: #131313;
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-container-3 span {
+    position: absolute;
+    top: 8px;
+  }
 
   .flex-container-3 a {
     position: absolute;
@@ -735,31 +753,44 @@ body {
     color: #aaa;
   }
 
+  .flex-container-3 a {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: #131313;
+    font-size: 9px;
+  }
+
+  .f1 a {
+    color: #f42;
+  }
+
   .flex-container-1-1 a:hover {
     color: #131313;
   }
 
-  .latest{
+  .latest {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .latest1{
+
+  .latest1 {
     display: flex;
     flex-direction: column;
-  
   }
-  .container{
+
+  .container {
     display: flex;
-    /* flex-direction: column;
-    width: 25%; */
   }
-  .art1-1 img{
+
+  .art1-1 img {
     visibility: hidden;
     width: 100%;
     height: 30vh;
   }
-  .art1-1{
+
+  .art1-1 {
     margin-top: 10px;
     position: relative;
     background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg") no-repeat center;
@@ -767,6 +798,7 @@ body {
     background-size: cover;
     background-position: center;
   }
+
   .art1 {
     float: left;
     width: 11vw;
@@ -778,23 +810,31 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
   }
 
-    .f1 ul {
-     display: block !important;
-     margin-top: 15px;
-    }
+  .f1 ul {
+    display: block !important;
+    margin-top: 15px;
+  }
 
-    .f1 ul li a span {
-      display: none;
-    }
+  .flex-container-3 span {
+    position: absolute;
+    top: -8px;
+  }
+
+  .last span {
+    color: #999;
+  }
+
+  .f1 ul li a span {
+    display: none;
+  }
 
   .fund-1-1 {
-    grid-row-start: 1 ;
+    grid-row-start: 1;
     grid-row-end: 2;
   }
-  
+
   .fund-1-2 {
     grid-row-start: 2;
     grid-row-end: 3;
@@ -814,10 +854,15 @@ body {
   .fund-1-2,
   .fund-1-3,
   .fund-1-4 {
-    grid-column-start: 1 ;
+    grid-column-start: 1;
     grid-column-end: 2;
   }
-  
+
+  .f2 {
+    display: flex;
+    margin: 0 20px;
+  }
+
   .funding .f2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -827,78 +872,89 @@ body {
     margin: 5px auto;
   }
 
-  .grid-container-2{
+  .grid-container-2 {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-.first{
-  height: 30vh;
-  transition: background-color .4s ease;
-  background: linear-gradient(rgba(255, 31, 42, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%),url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c")no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 10px;
-  color: #fff;
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 20px;
-  align-items: flex-start;
-  font-size: 20px;
-  line-height: 1.2em;
-}
-.topnews{
-  display: none;
- 
-}
-.topnews p{
-  font-size: 14px;
-}
-.botnews h1{
- font-weight: 100;
- margin-top: 30px;
-}
-.botnews h2{
-  font-size: 20px;
-}
-.botnews p{
-  font-size: 12px;
-  vertical-align: middle;
-  bottom: 0;
-}
-.botnews i {
-  vertical-align: middle;
-  margin: auto 10px;
-}
-.side{
-  display: flex;
-  flex-direction: column;
-  margin: auto 10px;
-}
-.second{
-  background:url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")no-repeat;
-  height: 30vh;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 10px;
-}
-.third{
-  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg")no-repeat;
-  height: 30vh;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 10px;
-}
-.second, 
-.third {
-  color: #fff;
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 20px;
-  align-items: flex-start;
-  font-size: 20px;
-  line-height: 1.2em;
-}
+
+  .first {
+    height: 30vh;
+    transition: background-color 0.4s ease;
+    background: linear-gradient(rgba(255, 31, 42, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%), url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c") no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    align-items: flex-start;
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  .topnews {
+    display: none;
+  }
+
+  .topnews p {
+    font-size: 14px;
+  }
+
+  .botnews h1 {
+    font-weight: 100;
+    margin-top: 30px;
+  }
+
+  .botnews h2 {
+    font-size: 20px;
+  }
+
+  .botnews p {
+    font-size: 12px;
+    vertical-align: middle;
+    bottom: 0;
+  }
+
+  .botnews i {
+    vertical-align: middle;
+    margin: auto 10px;
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    margin: auto 10px;
+  }
+
+  .second {
+    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+
+  .third {
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg") no-repeat;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+
+  .second,
+  .third {
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    align-items: flex-start;
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
   /* Latest section */
   .latest {
     display: flex;
@@ -922,7 +978,6 @@ body {
     color: #f42;
     cursor: pointer;
   }
-
 
   .container p {
     margin-top: 10px;
@@ -1047,18 +1102,21 @@ body {
     flex-direction: column;
     margin: 30px;
   }
-  .grid-container-3-1, .grid-container-3-2,
-   .grid-container-3-1,.grid-container-3-4,.grid-container-3-5
-   ,.grid-container-3-6,.grid-container-3-7,.grid-container-3-8{
+
+  .grid-container-3-1,
+  .grid-container-3-2,
+  .grid-container-3-1,
+  .grid-container-3-4,
+  .grid-container-3-5,
+  .grid-container-3-6,
+  .grid-container-3-7,
+  .grid-container-3-8 {
     margin-bottom: 20px;
   }
+
   .red-headings {
     color: #f42;
     font-size: 25px;
-  }
-
-  .grid-container-3-image {
-    position: relative;
   }
 
   .heading-container {
@@ -1090,7 +1148,7 @@ body {
     content: "\2022";
     color: #f42;
     font-weight: bold;
-    display: inline-block; 
+    display: inline-block;
     width: 1em;
     margin-left: -1em;
     border: none;
@@ -1128,7 +1186,7 @@ body {
   }
 
   .grid-container-3-image {
-    background:url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")no-repeat;
+    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
     top: 0;
     right: 0;
     width: 100%;
@@ -1142,31 +1200,33 @@ body {
     position: absolute;
     top: 84px;
     left: 10px;
+    color: #fff;
   }
 
-  .heading-container .grey-headings {
+  .grey-headings {
     color: #fff;
   }
 
   .heading-container .dark-grey-headings {
-    color: #fff ;
+    color: #fff;
     font-size: 25px;
   }
 
   .heading-container .author-info {
-      color: #666666;
+    color: #666;
   }
 
   .latest .topic {
     margin-left: -4px;
   }
 
-  .container{
+  .container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     position: relative;
+
     /* right: 70px; */
   }
 
@@ -1179,13 +1239,13 @@ body {
     height: 50px;
   } */
 
-  .art1-1 img{
+  .art1-1 img {
     width: 65px;
     height: 50px;
   }
 
-  .mytext, 
-  .text{
+  .mytext,
+  .text {
     margin-left: 20px;
     margin-top: -7px;
   }
@@ -1206,27 +1266,28 @@ body {
     padding-top: 30px;
   }
 
-  
   .links ul {
     display: flex;
     justify-content: center;
     padding: 10px;
   }
 
-  .links ul li a
- {
+  .links ul li a {
     color: #fff;
     padding: 10px;
     font-size: 11px;
   }
+
   .socials ul {
     display: flex;
     justify-content: center;
   }
-  .socials li{
+
+  .socials li {
     margin: auto 5px;
   }
-  .socials a{
+
+  .socials a {
     display: inline-flex;
     background-color: #333;
     border: 2px solid #333;
@@ -1236,6 +1297,7 @@ body {
     padding: 10px;
     font-size: 11px;
   }
+
   .foot2 {
     display: flex;
     background-color: #000;
@@ -1243,7 +1305,8 @@ body {
     padding: 30px;
     font-size: 12px;
   }
-  .foot2 span svg{
+
+  .foot2 span svg {
     line-height: 2em;
     width: 40px;
     margin-right: 10px;
@@ -1251,10 +1314,22 @@ body {
 }
 
 /* Laptop and desktop size */
-@media only screen and (min-width:768px){
-  .nav-top{
+@media only screen and (min-width: 768px) {
+  .nav-top {
     display: none;
   }
+
+  .socials a {
+    display: inline-flex;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 11px;
+  }
+
   .grid-container-1 {
     display: flex;
     justify-content: space-between;
@@ -1296,8 +1371,25 @@ body {
     color: #aaa;
   }
 
-  .flex-container-1-1 a:hover {
-    color: #131313;
+  .grid-container-3-links li {
+    border-bottom: 0.1rem solid #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* (Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bullet_color) */
+  .grid-container-3-links li::before {
+    list-style: circle;
+    content: "\2022";
+    color: #f42;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-shadow: 1px 1px 1px #f42;
   }
 
   .srch {
@@ -1326,88 +1418,97 @@ body {
     color: #131313;
   }
 
-  .flex-container-3 span {
-    position: absolute;
-    top: -2px;
+  .grid-container-2 {
+    display: flex;
+    height: 100%;
   }
 
-.grid-container-2{
-  display: flex;
-  height: 100%;
-}
-.first{
-  width: 66%;
-  transition: background-color .4s ease;
-  background: linear-gradient(rgba(255, 31, 42, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%),url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c")no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 10px;
-  padding: 20px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.topnews{
-  display: flex;
-  justify-content: space-between;
-}
-.topnews p{
-  font-size: 14px;
-}
-.topnews img{
-  width: 50%;
-  height: 100px;
-}
-.botnews h1{
- font-weight: 100;
- margin: 20px auto;
-}
-.botnews h2{
-  font-size: 42px;
-  margin: 20px auto;
-}
-.botnews p{
-  font-size: 12px;
-  vertical-align: middle;
-}
-.botnews i {
-  vertical-align: middle;
-  margin: auto 10px;
-}
-.side{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 33%;
-  margin: 10px 10px 10px 0;
-}
-.second{
-  background:url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")no-repeat;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 50%;
-  background-size: cover;
-  background-position: center;
-  margin: 0 10px 10px 0;
-}
-.third{
-  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg")no-repeat;
-  width: 100%;
-  height: 50%;
-  background-size: cover;
-  background-position: center;
-}
-.second, .third{
-  color: #fff;
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 20px;
-  align-items: flex-end;
-  font-size: 20px;
-  line-height: 1.2em;
-}
+  .first {
+    width: 66%;
+    transition: background-color 0.4s ease;
+    background: linear-gradient(rgba(255, 31, 42, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%), url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c") no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .topnews {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .topnews p {
+    font-size: 14px;
+  }
+
+  .topnews img {
+    width: 50%;
+    height: 100px;
+  }
+
+  .botnews h1 {
+    font-weight: 100;
+    margin: 20px auto;
+  }
+
+  .botnews h2 {
+    font-size: 42px;
+    margin: 20px auto;
+  }
+
+  .botnews p {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+
+  .botnews i {
+    vertical-align: middle;
+    margin: auto 10px;
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+    margin: 10px 10px 10px 0;
+  }
+
+  .second {
+    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px 10px 0;
+  }
+
+  .third {
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg") no-repeat;
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .second,
+  .third {
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    align-items: flex-end;
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
   /* Latest section */
   .latest {
     display: flex;
@@ -1420,17 +1521,21 @@ body {
     display: flex;
     margin: 10px auto;
   }
-  .container{
+
+  .container {
     display: flex;
     flex-direction: column;
     width: 25%;
+    margin: auto 10px;
   }
-  .art1-1 img{
+
+  .art1-1 img {
     visibility: hidden;
     width: 100%;
     height: 30vh;
   }
-  .art1-1{
+
+  .art1-1 {
     margin-top: 10px;
     position: relative;
     background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg") no-repeat center;
@@ -1438,11 +1543,13 @@ body {
     background-size: cover;
     background-position: center;
   }
+
+  /*
   .container h1 {
     margin-top: 10px;
     line-height: 1.2em;
     font-size: 14px;
-  }
+  } */
 
   .container h1:hover {
     color: #f42;
@@ -1588,7 +1695,7 @@ body {
     grid-row-end: 4;
   }
 
-/* Grid Columns */
+  /* Grid Columns */
   .grid-container-3-1,
   .grid-container-3-4,
   .grid-container-3-7 {
@@ -1617,7 +1724,6 @@ body {
     margin: 10px 20px;
     grid-column-gap: 24px;
     grid-row-gap: 25px;
-   
   }
 
   .red-headings {
@@ -1626,7 +1732,7 @@ body {
   }
 
   .grid-container-3-image {
-    background:url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")no-repeat;
+    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
     top: 0;
     right: 0;
     width: 100%;
@@ -1664,40 +1770,24 @@ body {
     color: #f42;
   }
 
-  .grid-container-3-links li {
-    border-bottom: 0.1rem solid #999;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  /* (Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bullet_color) */
-  .grid-container-3-links li::before {
-    list-style: circle;
-    content: "\2022";
-    color: #f42;
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    text-shadow: 1px 1px 1px #f42;
-  }
-
   .grid-container-3-links li a {
     color: #000;
     font-size: 20px;
   }
 
+  .links ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 11px;
+  }
+
   .grid-container-3-links li a:hover {
     color: #999;
   }
-  .container{
-    margin: auto 10px;
+
+  .flex-container-1-1 a:hover {
+    color: #131313;
   }
-
-
 
   footer {
     background-color: #131313;
@@ -1710,36 +1800,21 @@ body {
     padding-top: 30px;
   }
 
-  
   .links ul {
     display: flex;
     justify-content: center;
     padding: 10px;
   }
 
-  .links ul li a
- {
-    color: #fff;
-    padding: 10px;
-    font-size: 11px;
-  }
   .socials ul {
     display: flex;
     justify-content: center;
   }
-  .socials li{
+
+  .socials li {
     margin: auto 5px;
   }
-  .socials a{
-    display: inline-flex;
-    background-color: #333;
-    border: 2px solid #333;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    font-size: 11px;
-  }
+
   .foot2 {
     display: flex;
     background-color: #000;
@@ -1747,10 +1822,10 @@ body {
     padding: 30px;
     font-size: 12px;
   }
-  .foot2 span svg{
+
+  .foot2 span svg {
     line-height: 2em;
     width: 40px;
     margin-right: 10px;
   }
 }
-
