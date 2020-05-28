@@ -30,10 +30,18 @@ body {
   .flex-container-2 ,.flex-container-1-1 {
     display: none;
   }
+  
   .nav-top{
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
   }
+
   .menu-toggle {
     top: 15px;
     right: 20px;
@@ -179,6 +187,14 @@ body {
 
   .srch .menu-bar {
     display: none;
+  }
+
+  div.flex-container-3 {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
 
   .flex-container-3 {
