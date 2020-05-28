@@ -1276,12 +1276,6 @@ body {
     padding-left: 30px;
   }
 
-  .flex-container-3 a {
-    position: absolute;
-    top: 10px;
-    color: #131313;
-  }
-
   .grid-container-2 {
     display: flex;
     height: 100%;
@@ -1450,10 +1444,6 @@ body {
   .f1 ul {
     line-height: 1.6em;
     display: flex;
-  }
-
-  .f1 a {
-    color: #f42;
   }
 
   .f2 {
@@ -1629,6 +1619,16 @@ body {
 
   .flex-container-4-1 h3,
   .flex-container-4-1 p {
+    color: #f42;
+  }
+
+  .flex-container-3 a {
+    position: absolute;
+    top: 10px;
+    color: #131313;
+  }
+
+  .f1 a {
     color: #f42;
   }
 
