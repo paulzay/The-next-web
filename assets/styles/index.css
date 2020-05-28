@@ -700,6 +700,538 @@ body {
     top: -8px;
   }
 
+  .grid-container-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #131313;
+    font-size: 12px;
+  }
+
+  .grid-container-1 img {
+    display: none;
+  }
+
+  .grid-container-1-1 li {
+    display: inline-flex;
+  }
+
+  .grid-container-1-2 li {
+    display: inline-flex;
+  }
+
+  .grid-container-1-1 a,
+  .grid-container-1-2 a {
+    color: hsla(0, 0%, 100%, 0.6);
+    margin: auto 10px;
+  }
+
+  .flex-container-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex-container-1-1 li {
+    display: inline-flex;
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+
+  .flex-container-1-1 a {
+    color: #aaa;
+  }
+
+  .flex-container-1-1 a:hover {
+    color: #131313;
+  }
+
+  .latest{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .latest1{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .container{
+    display: flex;
+  }
+  .art1{
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg
+    ) no-repeat;
+    width: 100%;
+  }
+  .art1 img{
+    visibility: hidden;
+    width: 100%;
+  }
+  .art1 {
+    float: left;
+    width: 11vw;
+    height: 11vh;
+    margin: 10px;
+  }
+
+  .f1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 29px;
+  }
+
+    .f1 ul {
+     display: block !important;
+     margin-top: 15px;
+    }
+
+    .f1 ul li a span {
+      display: none;
+    }
+
+  .fund-1-1 {
+    grid-row-start: 1 ;
+    grid-row-end: 2;
+  }
+  
+  .fund-1-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .fund-1-3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .fund-1-4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .fund-1-1,
+  .fund-1-2,
+  .fund-1-3,
+  .fund-1-4 {
+    grid-column-start: 1 ;
+    grid-column-end: 2;
+  }
+  
+  .funding .f2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 4px;
+    max-width: 375px;
+    margin: 5px auto;
+  }
+
+  .grid-container-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+.first{
+  height: 30vh;
+  transition: background-color .4s ease;
+  background: linear-gradient(rgba(255, 31, 42, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%),url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c")no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 20px;
+  align-items: flex-start;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+.topnews{
+  display: none;
+ 
+}
+.topnews p{
+  font-size: 14px;
+}
+.botnews h1{
+ font-weight: 100;
+ margin-top: 30px;
+}
+.botnews h2{
+  font-size: 20px;
+}
+.botnews p{
+  font-size: 12px;
+  vertical-align: middle;
+  bottom: 0;
+}
+.botnews i {
+  vertical-align: middle;
+  margin: auto 10px;
+}
+.side{
+  display: flex;
+  flex-direction: column;
+  margin: auto 10px;
+}
+.second{
+  background:url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")no-repeat;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.third{
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg")no-repeat;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.second, 
+.third {
+  color: #fff;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 20px;
+  align-items: flex-start;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+  /* Latest section */
+  .latest {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .latest1,
+  .latest2 {
+    display: flex;
+    margin: 10px auto;
+  }
+
+  .container h1 {
+    margin-top: 10px;
+    line-height: 1.2em;
+    font-size: 14px;
+  }
+
+  .container h1:hover {
+    color: #f42;
+    cursor: pointer;
+  }
+
+  .container p {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 12px;
+  }
+
+  .topic {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f42;
+  }
+
+  .funding {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .f1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    color: #f42;
+  }
+
+  .f1 h1 {
+    font-size: 24px;
+  }
+
+  .f1 ul {
+    line-height: 1.6em;
+    display: flex;
+  }
+
+  .f1 a {
+    color: #f42;
+  }
+
+  .f2 {
+    display: flex;
+    margin: 0 20px;
+  }
+
+  .fund1 {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .grey-container {
+    width: 20%;
+    height: 25%;
+    background-color: rgb(216, 212, 212);
+    position: absolute;
+    top: 10px;
+    left: 9px;
+  }
+
+  .thriva {
+    background-color: #f42;
+    color: #fff;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .cash {
+    background-color: rgba(255, 68, 34, 0.08);
+    height: 60px;
+    color: #131313;
+  }
+
+  .cash p {
+    color: #555;
+  }
+
+  .thriva,
+  .cash {
+    padding-left: 90px;
+    padding-top: 10px;
+  }
+
+  .fitness {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    background-color: rgba(236, 130, 112, 0.08);
+    padding-left: 6px;
+    position: relative;
+  }
+
+  .fitness p span.texts-1 {
+    position: absolute;
+    top: 4px;
+  }
+
+  .fitness p span.texts-2 {
+    position: absolute;
+    top: 32px;
+  }
+
+  .last {
+    height: 30px;
+    background-color: rgba(236, 130, 112, 0.08);
+    border-top: 0.03rem solid #f42;
+    padding-top: 8px;
+    font-size: 14px;
+  }
+
+  .last span {
+    color: #999;
+  }
+
+  /* Apps, Gears, tech etc section */
+
+  /* Grid Rows */
+  .grid-container-3 {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+  }
+  .grid-container-3-1, .grid-container-3-2,
+   .grid-container-3-1,.grid-container-3-4,.grid-container-3-5
+   ,.grid-container-3-6,.grid-container-3-7,.grid-container-3-8{
+    margin-bottom: 20px;
+  }
+  .red-headings {
+    color: #f42;
+    font-size: 25px;
+  }
+
+  .grid-container-3-image {
+    position: relative;
+  }
+
+  .heading-container {
+    position: absolute;
+    bottom: 100px;
+    left: 19px;
+    line-height: 20px;
+  }
+
+  .grey-headings {
+    color: #333;
+    font-size: small;
+  }
+
+  .dark-grey-headings {
+    color: #333;
+    font-size: large;
+  }
+
+  .grid-container-3-links li {
+    border-bottom: 0.1rem solid #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* (Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bullet_color) */
+  .grid-container-3-links li::before {
+    list-style: circle;
+    content: "\2022";
+    color: #f42;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-shadow: 1px 1px 1px #f42;
+  }
+
+  .flex-container-4 {
+    background-color: rgb(245, 182, 193);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.05rem;
+  }
+
+  .flex-container-4-1 h3,
+  .flex-container-4-1 p {
+    color: #f42;
+  }
+
+  .grid-container-3-links li {
+    list-style: circle;
+    border-bottom: 0.1rem solid #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .grid-container-3-links li a {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .grid-container-3-links li a:hover {
+    color: #999;
+  }
+
+  .grid-container-3-image {
+    background:url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")no-repeat;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px 10px 0;
+  }
+
+  .heading-container {
+    position: absolute;
+    top: 84px;
+    left: 10px;
+  }
+
+  .heading-container .grey-headings {
+    color: #fff;
+  }
+
+  .heading-container .dark-grey-headings {
+    color: #fff ;
+    font-size: 25px;
+  }
+
+  .heading-container .author-info {
+      color: #666666;
+  }
+
+  .container{
+    display: flex;
+
+    width: 100%;
+  }
+  .art1-1 img{
+    visibility: hidden;
+    width: 100%;
+    height: 20vh;
+  }
+  .mytext, .text{
+    margin: 10px 0 10px 20px;
+  }
+  .art1-1{
+    margin-top: 10px;
+    position: relative;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg") no-repeat center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  footer {
+    background-color: #131313;
+    color: #999;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .socials {
+    padding-top: 30px;
+  }
+
+  
+  .links ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .links ul li a
+ {
+    color: #fff;
+    padding: 10px;
+    font-size: 11px;
+  }
+  .socials ul {
+    display: flex;
+    justify-content: center;
+  }
+  .socials li{
+    margin: auto 5px;
+  }
+  .socials a{
+    display: inline-flex;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 11px;
+  }
+  .foot2 {
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+    padding: 30px;
+    font-size: 12px;
+  }
+  .foot2 span svg{
+    line-height: 2em;
+    width: 40px;
+    margin-right: 10px;
+  }
+
 
 
 
