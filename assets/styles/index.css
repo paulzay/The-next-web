@@ -65,10 +65,6 @@ body {
     flex-direction: column;
   }
 
-  .container {
-    display: flex;
-  }
-
   /* .f1 {
     display: flex;
     flex-direction: column;
@@ -157,14 +153,6 @@ body {
     display: inline-flex;
     margin-top: 15px;
     margin-left: 30px;
-  }
-
-  .flex-container-1-1 a {
-    color: #aaa;
-  }
-
-  .flex-container-1-1 a:hover {
-    color: #131313;
   }
 
   .srch {
@@ -430,17 +418,6 @@ body {
     font-size: 25px;
   }
 
-  .grid-container-3-image {
-    position: relative;
-  }
-
-  .heading-container {
-    position: absolute;
-    bottom: 100px;
-    left: 19px;
-    line-height: 20px;
-  }
-
   .grey-headings {
     color: #333;
     font-size: small;
@@ -491,15 +468,6 @@ body {
     padding-bottom: 10px;
   } */
 
-  .grid-container-3-links li a {
-    color: #000;
-    font-size: 20px;
-  }
-
-  .grid-container-3-links li a:hover {
-    color: #999;
-  }
-
   .grid-container-3-image {
     background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
     top: 0;
@@ -515,16 +483,21 @@ body {
     position: absolute;
     top: 84px;
     left: 10px;
-  }
-
-  .heading-container .grey-headings {
+    line-height: 20px;
     color: #fff;
   }
 
-  .heading-container .dark-grey-headings {
+  /* .heading-container {
+    position: absolute;
+    bottom: 100px;
+    left: 19px;
+
+  } */
+
+  /* .dark-grey-headings {
     color: #fff;
     font-size: 25px;
-  }
+  } */
 
   .heading-container .author-info {
     color: #666;
@@ -572,21 +545,6 @@ body {
     padding: 10px;
   }
 
-  .links ul li a {
-    color: #fff;
-    padding: 10px;
-    font-size: 11px;
-  }
-
-  .socials ul {
-    display: flex;
-    justify-content: center;
-  }
-
-  .socials li {
-    margin: auto 5px;
-  }
-
   .socials a {
     display: inline-flex;
     background-color: #333;
@@ -596,6 +554,38 @@ body {
     height: 40px;
     padding: 10px;
     font-size: 11px;
+  }
+
+  .flex-container-1-1 a {
+    color: #aaa;
+  }
+
+  .grid-container-3-links li a {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .links ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .flex-container-1-1 a:hover {
+    color: #131313;
+  }
+
+  .grid-container-3-links li a:hover {
+    color: #999;
+  }
+
+  .socials ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials li {
+    margin: auto 5px;
   }
 
   .foot2 {
@@ -629,8 +619,6 @@ body {
   }
 
   .nav-top {
-    display: flex;
-    justify-content: space-between;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -668,22 +656,6 @@ body {
     display: none;
   }
 
-  div.flex-container-3 {
-    position: fixed;
-    top: 36px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-
-  div.flex-container-3 {
-    position: fixed;
-    top: 36px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-
   .flex-container-3 {
     /* position: relative; */
     background-color: yellow;
@@ -692,19 +664,11 @@ body {
     padding-left: 30px;
     display: flex;
     justify-content: center;
-  }
-
-  .flex-container-3 span {
-    position: absolute;
-    top: 8px;
-  }
-
-  .flex-container-3 a {
-    position: absolute;
-    top: 15px;
-    left: 250px;
-    color: #131313;
-    font-size: 9px;
+    position: fixed;
+    top: 36px;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
 
   .flex-container-3 span {
@@ -738,11 +702,6 @@ body {
     margin: auto 10px;
   }
 
-  .flex-container-2 {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .flex-container-1-1 li {
     display: inline-flex;
     margin-top: 15px;
@@ -769,20 +728,20 @@ body {
     color: #131313;
   }
 
-  .latest {
+  /* .latest {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-  }
+  } */
 
   .latest1 {
     display: flex;
     flex-direction: column;
   }
 
-  .container {
+  /* .container {
     display: flex;
-  }
+  } */
 
   .art1-1 img {
     visibility: hidden;
@@ -806,21 +765,15 @@ body {
     margin: 10px;
   }
 
-  .f1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
   .f1 ul {
     display: block !important;
     margin-top: 15px;
   }
 
-  .flex-container-3 span {
+  /* .flex-container-3 span {
     position: absolute;
     top: -8px;
-  }
+  } */
 
   .last span {
     color: #999;
@@ -974,6 +927,10 @@ body {
     font-size: 14px;
   }
 
+  .f1 h1 {
+    font-size: 24px;
+  }
+
   .container h1:hover {
     color: #f42;
     cursor: pointer;
@@ -1002,24 +959,6 @@ body {
     justify-content: space-between;
     margin: 30px;
     color: #f42;
-  }
-
-  .f1 h1 {
-    font-size: 24px;
-  }
-
-  .f1 ul {
-    line-height: 1.6em;
-    display: flex;
-  }
-
-  .f1 a {
-    color: #f42;
-  }
-
-  .f2 {
-    display: flex;
-    margin: 0 20px;
   }
 
   .fund1 {
@@ -1090,10 +1029,6 @@ body {
     font-size: 14px;
   }
 
-  .last span {
-    color: #999;
-  }
-
   /* Apps, Gears, tech etc section */
 
   /* Grid Rows */
@@ -1105,7 +1040,6 @@ body {
 
   .grid-container-3-1,
   .grid-container-3-2,
-  .grid-container-3-1,
   .grid-container-3-4,
   .grid-container-3-5,
   .grid-container-3-6,
@@ -1119,13 +1053,6 @@ body {
     font-size: 25px;
   }
 
-  .heading-container {
-    position: absolute;
-    bottom: 100px;
-    left: 19px;
-    line-height: 20px;
-  }
-
   .grey-headings {
     color: #333;
     font-size: small;
@@ -1137,6 +1064,7 @@ body {
   }
 
   .grid-container-3-links li {
+    list-style: circle;
     border-bottom: 0.1rem solid #999;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1169,18 +1097,6 @@ body {
     color: #f42;
   }
 
-  .grid-container-3-links li {
-    list-style: circle;
-    border-bottom: 0.1rem solid #999;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .grid-container-3-links li a {
-    color: #000;
-    font-size: 20px;
-  }
-
   .grid-container-3-links li a:hover {
     color: #999;
   }
@@ -1203,9 +1119,9 @@ body {
     color: #fff;
   }
 
-  .grey-headings {
+  /* .grey-headings {
     color: #fff;
-  }
+  } */
 
   .heading-container .dark-grey-headings {
     color: #fff;
@@ -1230,29 +1146,10 @@ body {
     /* right: 70px; */
   }
 
-  /* .art1-1{
-    margin-top: 10px;
-    position: relative;
-    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg") no-repeat center;
-    background-size: contain;
-    width: 80px;
-    height: 50px;
-  } */
-
-  .art1-1 img {
-    width: 65px;
-    height: 50px;
-  }
-
   .mytext,
   .text {
     margin-left: 20px;
     margin-top: -7px;
-  }
-
-  .mytext h1 {
-    font-size: 18px;
-    font-weight: bold;
   }
 
   footer {
@@ -1272,12 +1169,6 @@ body {
     padding: 10px;
   }
 
-  .links ul li a {
-    color: #fff;
-    padding: 10px;
-    font-size: 11px;
-  }
-
   .socials ul {
     display: flex;
     justify-content: center;
@@ -1285,17 +1176,6 @@ body {
 
   .socials li {
     margin: auto 5px;
-  }
-
-  .socials a {
-    display: inline-flex;
-    background-color: #333;
-    border: 2px solid #333;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    font-size: 11px;
   }
 
   .foot2 {
@@ -1317,17 +1197,6 @@ body {
 @media only screen and (min-width: 768px) {
   .nav-top {
     display: none;
-  }
-
-  .socials a {
-    display: inline-flex;
-    background-color: #333;
-    border: 2px solid #333;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    font-size: 11px;
   }
 
   .grid-container-1 {
@@ -1371,11 +1240,7 @@ body {
     color: #aaa;
   }
 
-  .grid-container-3-links li {
-    border-bottom: 0.1rem solid #999;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+
 
   /* (Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bullet_color) */
   .grid-container-3-links li::before {
@@ -1544,12 +1409,14 @@ body {
     background-position: center;
   }
 
-  /*
-  .container h1 {
-    margin-top: 10px;
-    line-height: 1.2em;
-    font-size: 14px;
-  } */
+  .f1 h1 {
+    font-size: 24px;
+  }
+
+  .mytext h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
 
   .container h1:hover {
     color: #f42;
@@ -1579,10 +1446,6 @@ body {
     justify-content: space-between;
     margin: 30px;
     color: #f42;
-  }
-
-  .f1 h1 {
-    font-size: 24px;
   }
 
   .f1 ul {
@@ -1770,6 +1633,17 @@ body {
     color: #f42;
   }
 
+  .socials a {
+    display: inline-flex;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 11px;
+  }
+
   .grid-container-3-links li a {
     color: #000;
     font-size: 20px;
@@ -1781,12 +1655,18 @@ body {
     font-size: 11px;
   }
 
+  .flex-container-1-1 a:hover {
+    color: #131313;
+  }
+
   .grid-container-3-links li a:hover {
     color: #999;
   }
 
-  .flex-container-1-1 a:hover {
-    color: #131313;
+  .grid-container-3-links li {
+    border-bottom: 0.1rem solid #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   footer {
