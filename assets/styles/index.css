@@ -140,7 +140,6 @@ body {
   .srch {
     margin: 10px;
     color: #aaa;
-    padding-right: 20px;
     padding-left: 10px;
     border-left: 1px solid #aaa;
   }
@@ -273,8 +272,7 @@ body {
     padding: 20px;
   }
 
-  .latest1,
-  .latest2 {
+  .latest1 {
     display: flex;
     margin: 10px auto;
   }
@@ -319,7 +317,7 @@ body {
   .f1 {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 10px;
     color: #f42;
   }
 
@@ -397,7 +395,7 @@ body {
   .grid-container-3 {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 10px;
   }
 
   .grid-container-3-1,
@@ -412,16 +410,17 @@ body {
 
   .red-headings {
     color: #f42;
+    margin: 20px 0;
     font-size: 25px;
   }
 
   .grey-headings {
-    color: #333;
+    color: #fff;
     font-size: small;
   }
 
   .dark-grey-headings {
-    color: #333;
+    color: #fff;
     font-size: large;
   }
 
@@ -471,15 +470,14 @@ body {
   }
 
   .heading-container {
-    position: absolute;
-    top: 84px;
-    left: 10px;
+    padding-top: 15%;
+    padding-left: 20px;
     line-height: 20px;
     color: #fff;
   }
-  
+
   .heading-container .author-info {
-    color: #666;
+    color: #fff;
   }
 
   .container {
@@ -495,7 +493,7 @@ body {
 
   .mytext,
   .text {
-    margin: 10px 0 10px 20px;
+    margin: 20px 0 10px 20px;
   }
 
   .art1-1 {
@@ -923,7 +921,7 @@ body {
     margin-top: 10px;
   }
 
-  .f1  h1 {
+  .f1 h1 {
     color: #f42;
     margin-left: 0;
   }
@@ -1320,7 +1318,7 @@ body {
   }
 
   .flex-container-3 span {
-    position: absolute;  
+    position: absolute;
     top: 3px;
     left: 410px;
   }
