@@ -455,6 +455,7 @@ body {
   .flex-container-4-1 h3,
   .flex-container-4-1 p {
     color: #f42;
+    margin: 10px 10px;
   }
 
   .grid-container-3-image {
@@ -1066,6 +1067,7 @@ body {
   .flex-container-4-1 h3,
   .flex-container-4-1 p {
     color: #f42;
+    margin: 10px 10px;
   }
 
   .grid-container-3-links li a:hover {
@@ -1088,7 +1090,7 @@ body {
     display: flex;
     flex-direction: column;
     /* align-items: flex-end; */
-    padding-top: 320px;
+    padding-top: 30%;
     padding-left: 10px;
   }
 
@@ -1670,6 +1672,7 @@ body {
   .flex-container-4-1 h3,
   .flex-container-4-1 p {
     color: #f42;
+    margin: 10px 10px;
   }
 
   .flex-container-3 a {
