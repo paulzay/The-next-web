@@ -584,6 +584,18 @@ body {
 
 /* Tablet size */
 @media only screen and (min-width: 376px) and (max-width: 767px) {
+  .nav-top {
+    display: flex;
+    float: left;
+    background: #fff;
+  }
+  .nav-top img {
+    width: 40%;
+    background: linear-gradient(
+      rgba(255, 31, 42, 0.7) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+  }
   .flex-container-2 {
     display: flex;
     justify-content: space-between;
@@ -626,7 +638,7 @@ body {
   .srch {
     margin: 10px;
     color: #aaa;
-    padding-right: 23px;
+
     padding-left: 10px;
     border-left: 1px solid #aaa;
   }
@@ -1198,10 +1210,33 @@ body {
 
 /* Laptop and desktop size */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-top {
+    display: block !important;
+    float: left;
+
+    background: linear-gradient(
+      rgba(255, 31, 42, 0.7) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+    width: 10%;
+    height: 8%;
+  }
+  .nav-top img {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .srch {
+    outline: 1px solid white;
+    visibility: hidden;
+  }
+  .topnews {
+    visibility: hidden;
+  }
   .fund1.fund-1-1,
   .fund1.fund-1-2,
   .fund1.fund-1-3 {
-   width: 308px;
+    width: 308px;
   }
 
   .f2 .fund-1-4 {
