@@ -58,12 +58,16 @@ body {
 
   .latest1 {
     display: flex;
-    flex-direction: column;
+    margin: 10px auto;
   }
 
   .f1 ul {
     display: block !important;
     margin-top: 15px;
+  }
+
+  .flex-container-3 span {
+    display: none;
   }
 
   .f1 ul li a span {
@@ -171,10 +175,6 @@ body {
     font-size: 10px;
   }
 
-  .flex-container-3 span {
-    display: none;
-  }
-
   .grid-container-2 {
     display: flex;
     flex-direction: column;
@@ -270,11 +270,6 @@ body {
     padding: 20px;
   }
 
-  .latest1 {
-    display: flex;
-    margin: 10px auto;
-  }
-
   .container h1 {
     margin-top: 10px;
     line-height: 1.2em;
@@ -306,6 +301,32 @@ body {
   .funding {
     display: flex;
     flex-direction: column;
+  }
+
+  .socials a {
+    display: inline-flex;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .flex-container-1-1 a {
+    color: #aaa;
+  }
+
+  .grid-container-3-links li a {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .links ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 11px;
   }
 
   div.f1 ul li a {
@@ -520,32 +541,6 @@ body {
     padding: 10px;
   }
 
-  .socials a {
-    display: inline-flex;
-    background-color: #333;
-    border: 2px solid #333;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    font-size: 11px;
-  }
-
-  .flex-container-1-1 a {
-    color: #aaa;
-  }
-
-  .grid-container-3-links li a {
-    color: #000;
-    font-size: 20px;
-  }
-
-  .links ul li a {
-    color: #fff;
-    padding: 10px;
-    font-size: 11px;
-  }
-
   .flex-container-1-1 a:hover {
     color: #131313;
   }
@@ -582,17 +577,23 @@ body {
 @media only screen and (min-width: 376px) and (max-width: 767px) {
   .nav-top {
     display: flex;
-    float: left;
-    background: #fff;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
   }
 
   .nav-top img {
-    width: 40%;
     background:
       linear-gradient(
         rgba(255, 31, 42, 0.7) 0%,
         rgba(0, 0, 0, 0.9) 100%
       );
+    width: 95px;
+    height: 47px;
   }
 
   .flex-container-2 {
@@ -606,22 +607,6 @@ body {
   .grid-container-1 .flex-container-2,
   .flex-container-1-1 {
     display: none;
-  }
-
-  .nav-top {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: #fff;
-  }
-
-  .nav-top img {
-    width: 95px;
-    height: 47px;
   }
 
   .menu-toggle {
@@ -703,12 +688,34 @@ body {
     margin-left: 30px;
   }
 
+  .f1 a {
+    color: #f42;
+  }
+
+  .socials a {
+    display: inline-flex;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 11px;
+  }
+
   .flex-container-1-1 a {
     color: #aaa;
   }
 
-  .f1 a {
-    color: #f42;
+  .grid-container-3-links li a {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .links ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 11px;
   }
 
   .flex-container-1-1 a:hover {
@@ -878,6 +885,13 @@ body {
     flex-direction: column;
   }
 
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
   .latest1 .container {
     margin-left: 0;
   }
@@ -894,6 +908,8 @@ body {
 
   .f1 h1 {
     font-size: 24px;
+    color: #f42;
+    margin-left: 0;
   }
 
   .container h2:hover {
@@ -927,14 +943,20 @@ body {
     color: #f42;
   }
 
+  .grid-container-3-links li {
+    list-style: circle;
+    border-bottom: 0.1rem solid #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .socials li {
+    margin: auto 5px;
+  }
+
   .f1 ul li {
     font-size: 12px;
     margin-top: 10px;
-  }
-
-  .f1 h1 {
-    color: #f42;
-    margin-left: 0;
   }
 
   .fund1 {
@@ -974,7 +996,7 @@ body {
   }
 
   .cash p,
-  h1 {
+  .cash h1 {
     color: #555;
     font-weight: bold;
     font-size: 14px;
@@ -1048,13 +1070,6 @@ body {
     font-size: large;
   }
 
-  .grid-container-3-links li {
-    list-style: circle;
-    border-bottom: 0.1rem solid #999;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
   /* (Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bullet_color) */
   .grid-container-3-links li::before {
     list-style: circle;
@@ -1120,13 +1135,6 @@ body {
     margin-left: -4px;
   }
 
-  .container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-
   .mytext,
   .text {
     margin-left: 20px;
@@ -1150,47 +1158,9 @@ body {
     padding: 10px;
   }
 
-  .socials a {
-    display: inline-flex;
-    background-color: #333;
-    border: 2px solid #333;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    font-size: 11px;
-  }
-
-  .flex-container-1-1 a {
-    color: #aaa;
-  }
-
-  .grid-container-3-links li a {
-    color: #000;
-    font-size: 20px;
-  }
-
-  .links ul li a {
-    color: #fff;
-    padding: 10px;
-    font-size: 11px;
-  }
-
-  .flex-container-1-1 a:hover {
-    color: #131313;
-  }
-
-  .grid-container-3-links li a:hover {
-    color: #999;
-  }
-
   .socials ul {
     display: flex;
     justify-content: center;
-  }
-
-  .socials li {
-    margin: auto 5px;
   }
 
   .foot2 {
@@ -1392,6 +1362,8 @@ body {
     justify-content: flex-start;
     padding-top: 10px;
     color: #131313;
+    position: absolute;
+    top: 10px;
   }
 
   .flex-container-3 span {
@@ -1745,12 +1717,6 @@ body {
   .flex-container-4-1 p {
     color: #f42;
     margin: 10px 10px;
-  }
-
-  .flex-container-3 a {
-    position: absolute;
-    top: 10px;
-    color: #131313;
   }
 
   .f1 a {
