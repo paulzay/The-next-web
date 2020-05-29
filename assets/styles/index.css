@@ -47,6 +47,14 @@ body {
     background-color: #fff;
   }
 
+  .nav-top img {
+    background:
+      linear-gradient(rgba(255, 31, 42, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 100%);
+    width: 95px;
+    height: 47px;
+  }
+
   .menu-toggle {
     top: 15px;
     right: 20px;
