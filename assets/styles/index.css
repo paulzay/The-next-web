@@ -219,12 +219,12 @@ body {
     font-size: 14px;
   }
 
-  .botnews h1 {
+  .botnews h2 {
     font-weight: 100;
     margin-top: 30px;
   }
 
-  .botnews h2 {
+  .botnews h3 {
     font-size: 20px;
   }
 
@@ -299,7 +299,7 @@ body {
     font-size: 24px;
   }
 
-  .container h1:hover {
+  .container h2:hover {
     color: #f42;
     cursor: pointer;
   }
@@ -875,12 +875,12 @@ body {
     font-size: 14px;
   }
 
-  .botnews h1 {
+  .botnews h2 {
     font-weight: 100;
     margin-top: 30px;
   }
 
-  .botnews h2 {
+  .botnews h3 {
     font-size: 20px;
   }
 
@@ -955,7 +955,7 @@ body {
     font-size: 24px;
   }
 
-  .container h1:hover {
+  .container h2:hover {
     color: #f42;
     cursor: pointer;
   }
@@ -1339,12 +1339,12 @@ body {
     height: 100px;
   }
 
-  .botnews h1 {
+  .botnews h2 {
     font-weight: 100;
     margin: 20px auto;
   }
 
-  .botnews h2 {
+  .botnews h3 {
     font-size: 42px;
     margin: 20px auto;
   }
@@ -1442,12 +1442,12 @@ body {
     font-size: 24px;
   }
 
-  .mytext h1 {
+  .mytext h2 {
     font-size: 18px;
     font-weight: bold;
   }
 
-  .container h1:hover {
+  .container h2:hover {
     color: #f42;
     cursor: pointer;
   }
