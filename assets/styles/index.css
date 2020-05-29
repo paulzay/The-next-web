@@ -27,6 +27,7 @@ body {
 
 /* Mobile size */
 @media only screen and (max-width: 375px) {
+
   .grid-container-1-1,
   .grid-container-1-2,
   .srch1,
@@ -184,12 +185,9 @@ body {
   .first {
     height: 30vh;
     transition: background-color 0.4s ease;
-    background: linear-gradient(
-        rgba(255, 31, 42, 0.7) 0%,
-        rgba(0, 0, 0, 0.9) 100%
-      ),
-      url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c")
-        no-repeat;
+    background: linear-gradient(rgba(255, 31, 42, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 100%),
+      url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c") no-repeat;
     background-position: center;
     background-size: cover;
     margin: 10px;
@@ -237,8 +235,7 @@ body {
   }
 
   .second {
-    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")
-      no-repeat;
+    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
     height: 30vh;
     background-size: cover;
     background-position: center;
@@ -246,8 +243,7 @@ body {
   }
 
   .third {
-    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg")
-      no-repeat;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg") no-repeat;
     height: 30vh;
     background-size: cover;
     background-position: center;
@@ -459,8 +455,7 @@ body {
   }
 
   .grid-container-3-image {
-    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")
-      no-repeat;
+    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
     top: 0;
     right: 0;
     width: 100%;
@@ -500,8 +495,7 @@ body {
   .art1-1 {
     margin-top: 10px;
     position: relative;
-    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg")
-      no-repeat center;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg") no-repeat center;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -589,13 +583,13 @@ body {
     float: left;
     background: #fff;
   }
+
   .nav-top img {
     width: 40%;
-    background: linear-gradient(
-      rgba(255, 31, 42, 0.7) 0%,
-      rgba(0, 0, 0, 0.9) 100%
-    );
+    background: linear-gradient(rgba(255, 31, 42, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 100%);
   }
+
   .flex-container-2 {
     display: flex;
     justify-content: space-between;
@@ -725,8 +719,7 @@ body {
   .art1-1 {
     margin-top: 10px;
     position: relative;
-    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg")
-      no-repeat center;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg") no-repeat center;
     width: 75px;
     height: 75px;
     background-size: cover;
@@ -796,12 +789,9 @@ body {
   .first {
     height: 30vh;
     transition: background-color 0.4s ease;
-    background: linear-gradient(
-        rgba(255, 31, 42, 0.7) 0%,
-        rgba(0, 0, 0, 0.9) 100%
-      ),
-      url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c")
-        no-repeat;
+    background: linear-gradient(rgba(255, 31, 42, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 100%),
+      url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c") no-repeat;
     background-position: center;
     background-size: cover;
     margin: 10px;
@@ -849,8 +839,7 @@ body {
   }
 
   .second {
-    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")
-      no-repeat;
+    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
     height: 30vh;
     background-size: cover;
     background-position: center;
@@ -858,8 +847,7 @@ body {
   }
 
   .third {
-    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg")
-      no-repeat;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg") no-repeat;
     height: 30vh;
     background-size: cover;
     background-position: center;
@@ -882,9 +870,11 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   .latest1 .container {
     margin-left: 0;
   }
+
   .latest {
     display: flex;
     flex-direction: column;
@@ -929,6 +919,7 @@ body {
     margin-left: 10px;
     color: #f42;
   }
+
   .f1 ul li {
     font-size: 12px;
     margin-top: 10px;
@@ -962,11 +953,13 @@ body {
     color: #fff;
     height: 40px;
   }
+
   .thriva h1 {
     color: #fff;
     margin-left: 11%;
     font-size: 14px;
   }
+
   .cash {
     background-color: rgba(255, 68, 34, 0.08);
     height: 60px;
@@ -1088,8 +1081,7 @@ body {
   }
 
   .grid-container-3-image {
-    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")
-      no-repeat;
+    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
     top: 0;
     right: 0;
     width: 100%;
@@ -1214,25 +1206,27 @@ body {
     display: block !important;
     float: left;
 
-    background: linear-gradient(
-      rgba(255, 31, 42, 0.7) 0%,
-      rgba(0, 0, 0, 0.9) 100%
-    );
+    background: linear-gradient(rgba(255, 31, 42, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 100%);
     width: 10%;
     height: 8%;
   }
+
   .nav-top img {
     width: 80%;
     margin-top: 30px;
     margin-left: 10px;
   }
+
   .srch {
     outline: 1px solid white;
     visibility: hidden;
   }
+
   .topnews {
     visibility: hidden;
   }
+
   .fund1.fund-1-1,
   .fund1.fund-1-2,
   .fund1.fund-1-3 {
@@ -1246,6 +1240,7 @@ body {
   .latest {
     margin-top: 30px;
   }
+
   .latest1 {
     display: flex;
     width: 100%;
@@ -1266,16 +1261,40 @@ body {
   .art1-1 {
     margin-top: 10px;
     position: relative;
-    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg")
-      no-repeat center;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg") no-repeat center;
     width: 100%;
     background-size: cover;
     background-position: center;
   }
+
   .mytext {
     margin-top: 20px;
   }
+
+  .grid-container-3 {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0;
+  }
+
+  .grid-container-3-1,
+  .grid-container-3-2,
+  .grid-container-3-3,
+  .grid-container-3-4,
+  .grid-container-3-5,
+  .grid-container-3-6,
+  .grid-container-3-7,
+  .grid-container-3-8 {
+    width: 49%;
+    padding-left: 10px;
+  }
+
+  .grid-container-3-9 {
+    display: none !important;
+  }
 }
+
 /* Laptop and desktop size */
 @media only screen and (min-width: 768px) {
   .nav-top {
@@ -1379,12 +1398,9 @@ body {
   .first {
     width: 66%;
     transition: background-color 0.4s ease;
-    background: linear-gradient(
-        rgba(255, 31, 42, 0.7) 0%,
-        rgba(0, 0, 0, 0.9) 100%
-      ),
-      url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c")
-        no-repeat;
+    background: linear-gradient(rgba(255, 31, 42, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 100%),
+      url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c") no-repeat;
     background-position: center;
     background-size: cover;
     margin: 10px;
@@ -1438,8 +1454,7 @@ body {
   }
 
   .second {
-    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")
-      no-repeat;
+    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
     top: 0;
     right: 0;
     width: 100%;
@@ -1450,8 +1465,7 @@ body {
   }
 
   .third {
-    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg")
-      no-repeat;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg") no-repeat;
     width: 100%;
     height: 50%;
     background-size: cover;
@@ -1473,6 +1487,7 @@ body {
   .latest {
     margin-top: 30px;
   }
+
   .latest1 {
     display: flex;
     flex-wrap: wrap;
@@ -1493,8 +1508,7 @@ body {
   .art1-1 {
     margin-top: 10px;
     position: relative;
-    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg")
-      no-repeat center;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg") no-repeat center;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -1681,8 +1695,7 @@ body {
   }
 
   .grid-container-3-image {
-    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")
-      no-repeat;
+    background: url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg") no-repeat;
     top: 0;
     right: 0;
     width: 100%;
