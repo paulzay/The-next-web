@@ -328,11 +328,6 @@ body {
     color: #f42;
   }
 
-  /* .f1 ul {
-    line-height: 1.6em;
-    display: flex;
-  } */
-
   .fund1 {
     display: flex;
     margin: 10px;
@@ -999,12 +994,10 @@ body {
   }
 
   .fitness p span.texts-1 {
-    position: absolute;
     top: 4px;
   }
 
   .fitness p span.texts-2 {
-    position: absolute;
     top: 32px;
   }
 
@@ -1101,7 +1094,6 @@ body {
   }
 
   .heading-container {
-    position: absolute;
     top: 84px;
     left: 10px;
     color: #fff;
