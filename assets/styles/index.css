@@ -1158,6 +1158,40 @@ body {
     padding: 10px;
   }
 
+  .socials a {
+    display: inline-flex;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .flex-container-1-1 a {
+    color: #aaa;
+  }
+
+  .grid-container-3-links li a {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .links ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .flex-container-1-1 a:hover {
+    color: #131313;
+  }
+
+  .grid-container-3-links li a:hover {
+    color: #999;
+  }
+
   .socials ul {
     display: flex;
     justify-content: center;
@@ -1181,6 +1215,8 @@ body {
     margin-right: 10px;
   }
 }
+
+/* Laptop and desktop size */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .latest {
     margin-top: 30px;
