@@ -671,23 +671,29 @@ body {
   }
 
   .flex-container-3 {
-    /* position: relative; */
     background-color: yellow;
     height: 40px;
     color: #131313;
     padding-left: 30px;
-    display: flex;
-    justify-content: center;
     position: fixed;
-    top: 36px;
+    top: 47px;
     left: 0;
     right: 0;
     z-index: 1;
   }
 
+  .flex-container-3 a {
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+    color: #131313;
+    font-size: 9px;
+  }
+
   .flex-container-3 span {
     position: absolute;
-    top: -8px;
+    top: 6px;
+    right: 150px;
   }
 
   .grid-container-1 {
@@ -724,14 +730,6 @@ body {
 
   .flex-container-1-1 a {
     color: #aaa;
-  }
-
-  .flex-container-3 a {
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    color: #131313;
-    font-size: 9px;
   }
 
   .f1 a {
