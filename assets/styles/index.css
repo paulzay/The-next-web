@@ -1197,6 +1197,16 @@ body {
 
 /* Laptop and desktop size */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .fund1.fund-1-1,
+  .fund1.fund-1-2,
+  .fund1.fund-1-3 {
+   width: 308px;
+  }
+
+  .f2 .fund-1-4 {
+    display: none;
+  }
+
   .latest {
     margin-top: 30px;
   }
