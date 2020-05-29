@@ -938,9 +938,14 @@ body {
 
   .f1 {
     display: flex;
-    justify-content: space-between;
-    margin: 30px;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 10px;
     color: #f42;
+  }
+  .f1 ul li {
+    font-size: 12px;
+    margin-top: 10px;
   }
 
   .fund1 {
@@ -1098,10 +1103,6 @@ body {
     left: 10px;
     color: #fff;
   }
-
-  /* .grey-headings {
-    color: #fff;
-  } */
 
   .heading-container .dark-grey-headings {
     color: #fff;
