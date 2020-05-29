@@ -1333,6 +1333,19 @@ body {
     padding-left: 30px;
   }
 
+  .flex-container-3 a {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    color: #131313;
+  }
+
+  .flex-container-3 span {
+    position: absolute;  
+    top: 3px;
+    left: 410px;
+  }
+
   .grid-container-2 {
     display: flex;
     height: 100%;
