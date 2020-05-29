@@ -786,14 +786,12 @@ body {
   }
 
   .fund-1-4 {
-    grid-row-start: 4;
-    grid-row-end: 5;
+    display: none !important;
   }
 
   .fund-1-1,
   .fund-1-2,
-  .fund-1-3,
-  .fund-1-4 {
+  .fund-1-3 {
     grid-column-start: 1;
     grid-column-end: 2;
   }
