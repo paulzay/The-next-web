@@ -312,9 +312,13 @@ body {
     flex-direction: column;
   }
 
+  div.f1 ul li a {
+    color: #f42;
+  }
+
   .f1 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin: 30px;
     color: #f42;
   }
