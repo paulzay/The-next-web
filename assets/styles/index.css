@@ -958,6 +958,11 @@ body {
     margin-top: 10px;
   }
 
+  .f1  h1 {
+    color: #f42;
+    margin-left: 0;
+  }
+
   .fund1 {
     display: flex;
     margin: 10px;
