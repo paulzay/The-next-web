@@ -970,17 +970,24 @@ body {
     background-color: #f42;
     color: #fff;
     height: 40px;
-    font-size: 20px;
   }
-
+  .thriva h1 {
+    color: #fff;
+    margin-left: 11%;
+    font-size: 14px;
+  }
   .cash {
     background-color: rgba(255, 68, 34, 0.08);
     height: 60px;
     color: #131313;
   }
 
-  .cash p {
+  .cash p,
+  h1 {
     color: #555;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 11%;
   }
 
   .thriva,
@@ -994,7 +1001,7 @@ body {
     flex-direction: column;
     height: 70px;
     background-color: rgba(236, 130, 112, 0.08);
-    padding-left: 6px;
+    padding-left: 20px;
     position: relative;
   }
 
@@ -1020,7 +1027,7 @@ body {
   .grid-container-3 {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 30px 10px;
   }
 
   .grid-container-3-1,
@@ -1036,15 +1043,16 @@ body {
   .red-headings {
     color: #f42;
     font-size: 25px;
+    margin: 20px 0;
   }
 
   .grey-headings {
-    color: #333;
+    color: #fff;
     font-size: small;
   }
 
   .dark-grey-headings {
-    color: #333;
+    color: #fff;
     font-size: large;
   }
 
@@ -1092,16 +1100,17 @@ body {
     top: 0;
     right: 0;
     width: 100%;
-    height: 40vh;
+    height: 90vh;
     background-size: cover;
     background-position: center;
     margin: 0 10px 10px 0;
   }
 
   .heading-container {
-    top: 84px;
-    left: 10px;
-    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50%;
+    padding-left: 20px;
   }
 
   .heading-container .dark-grey-headings {
@@ -1110,7 +1119,7 @@ body {
   }
 
   .heading-container .author-info {
-    color: #666;
+    color: #fff;
   }
 
   .latest .topic {
