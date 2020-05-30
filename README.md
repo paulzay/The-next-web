@@ -32,7 +32,7 @@ This is an assigned collaborative project where we had to build a responsive web
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/paulzay/The-next-web/project-draft/index.html)
+[Live Demo Link](https://the-next-web.now.sh/)
 
 
 ## Getting Started
