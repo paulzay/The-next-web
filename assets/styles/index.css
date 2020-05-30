@@ -1,9 +1,1849 @@
-@media only screen and(max-width: 375px){
-  
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
-@media only screen and (max-width:768px){
 
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 60%;
 }
-@media only screen and(min-width: 769px){
 
+body {
+  padding: 0;
+  background-color: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+* a {
+  text-decoration: none;
+}
+
+/* Mobile size */
+@media only screen and (max-width: 375px) {
+  .grid-container-1-1,
+  .grid-container-1-2,
+  .srch1,
+  .grid-container-1 .flex-container-2,
+  .flex-container-1-1 {
+    display: none;
+  }
+
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  .nav-top img {
+    background:
+      linear-gradient(
+        rgba(255, 31, 42, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      );
+    width: 95px;
+    height: 47px;
+  }
+
+  .menu-toggle {
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    color: #f42;
+    font-size: 10px;
+    padding: 0 10px;
+  }
+
+  .f1 ul {
+    display: block !important;
+    margin-top: 15px;
+  }
+
+  .flex-container-3 span {
+    display: none;
+  }
+
+  .f1 ul li a span {
+    display: none;
+  }
+
+  .fund-1-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .fund-1-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .fund-1-3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .fund-1-4 {
+    display: none !important;
+  }
+
+  .fund-1-1,
+  .fund-1-2,
+  .fund-1-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .funding .f2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 4px;
+    max-width: 375px;
+    margin: 5px auto;
+  }
+
+  .grid-container-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #131313;
+    font-size: 12px;
+  }
+
+  .grid-container-1 img {
+    display: none;
+  }
+
+  .grid-container-1-1 li {
+    display: inline-flex;
+  }
+
+  .grid-container-1-2 li {
+    display: inline-flex;
+  }
+
+  .grid-container-1-1 a,
+  .grid-container-1-2 a {
+    color: hsla(0, 0%, 100%, 0.6);
+    margin: auto 10px;
+  }
+
+  .flex-container-1-1 li {
+    display: inline-flex;
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+
+  .srch {
+    margin: 0;
+    color: #aaa;
+    padding: 10px;
+    border-left: 1px solid #aaa;
+  }
+
+  .srch .menu-bar {
+    display: none;
+  }
+
+  div.flex-container-3 {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .flex-container-3 {
+    position: relative;
+    background-color: yellow;
+    height: 40px;
+    color: #131313;
+    padding-left: 30px;
+  }
+
+  .flex-container-3 a {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    font-size: 10px;
+  }
+
+  .grid-container-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .first {
+    height: 30vh;
+    transition: background-color 0.4s ease;
+    background:
+      linear-gradient(
+        rgba(255, 31, 42, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      ),
+      url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c")
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    align-items: flex-end;
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  .topnews {
+    display: none;
+  }
+
+  .topnews p {
+    font-size: 14px;
+  }
+
+  .botnews h2 {
+    font-weight: 100;
+    margin-top: 30px;
+  }
+
+  .botnews h3 {
+    font-size: 20px;
+  }
+
+  .botnews p {
+    font-size: 12px;
+    vertical-align: middle;
+    bottom: 0;
+  }
+
+  .botnews i {
+    vertical-align: middle;
+    margin: auto 10px;
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    margin: auto 10px;
+  }
+
+  .second {
+    background:
+      url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")
+      no-repeat;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+
+  .third {
+    background:
+      url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg")
+      no-repeat;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+
+  .second,
+  .third {
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    align-items: flex-end;
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  /* Latest section */
+  .latest1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .latest {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    outline: 1px solid red;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .container h1 {
+    margin-top: 10px;
+    line-height: 1.2em;
+    font-size: 14px;
+  }
+
+  .f1 h1 {
+    font-size: 24px;
+  }
+
+  .container h2:hover {
+    color: #f42;
+    cursor: pointer;
+  }
+
+  .container p {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 12px;
+  }
+
+  .topic {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f42;
+  }
+
+  .funding {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socials a {
+    display: inline-flex;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .flex-container-1-1 a {
+    color: #aaa;
+  }
+
+  .grid-container-3-links li a {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .links ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  div.f1 ul li a {
+    color: #f42;
+  }
+
+  .f1 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: #f42;
+  }
+
+  .fund1 {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .grey-container {
+    width: 20%;
+    height: 25%;
+    background-color: rgb(216, 212, 212);
+    position: absolute;
+    top: 10px;
+    left: 9px;
+  }
+
+  .thriva {
+    background-color: #f42;
+    color: #fff;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .cash {
+    background-color: rgba(255, 68, 34, 0.08);
+    height: 60px;
+    color: #131313;
+  }
+
+  .cash p {
+    color: #555;
+  }
+
+  .thriva,
+  .cash {
+    padding-left: 90px;
+    padding-top: 10px;
+  }
+
+  .fitness {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    background-color: rgba(236, 130, 112, 0.08);
+    padding-left: 6px;
+    position: relative;
+  }
+
+  .fitness p span.texts-1 {
+    position: absolute;
+    top: 4px;
+  }
+
+  .fitness p span.texts-2 {
+    position: absolute;
+    top: 32px;
+  }
+
+  .last {
+    height: 30px;
+    background-color: rgba(236, 130, 112, 0.08);
+    border-top: 0.03rem solid #f42;
+    padding-top: 8px;
+    font-size: 14px;
+  }
+
+  /* Apps, Gears, tech etc section */
+
+  /* Grid Rows */
+  .grid-container-3 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .grid-container-3-1,
+  .grid-container-3-2,
+  .grid-container-3-4,
+  .grid-container-3-5,
+  .grid-container-3-6,
+  .grid-container-3-7,
+  .grid-container-3-8 {
+    margin-bottom: 20px;
+  }
+
+  .red-headings {
+    color: #f42;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  .grey-headings {
+    color: #fff;
+    font-size: small;
+  }
+
+  .dark-grey-headings {
+    color: #fff;
+    font-size: large;
+  }
+
+  .grid-container-3-links li {
+    border-bottom: 0.1rem solid #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* (Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bullet_color) */
+  .grid-container-3-links li::before {
+    list-style: circle;
+    content: "\2022";
+    color: #f42;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-shadow: 1px 1px 1px #f42;
+  }
+
+  .flex-container-4 {
+    background-color: rgb(245, 182, 193);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.05rem;
+  }
+
+  .flex-container-4-1 h3,
+  .flex-container-4-1 p {
+    color: #f42;
+    margin: 10px 10px;
+  }
+
+  .grid-container-3-image {
+    background:
+      url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")
+      no-repeat;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px 10px 0;
+  }
+
+  .heading-container {
+    padding-top: 15%;
+    padding-left: 20px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  .heading-container .author-info {
+    color: #fff;
+  }
+
+  .art1-1 img {
+    visibility: hidden;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .mytext {
+    margin: 20px 0 10px 20px;
+  }
+
+  .art1-1 {
+    margin-top: 10px;
+    background:
+      url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg")
+      no-repeat center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  footer {
+    background-color: #131313;
+    color: #999;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .socials {
+    padding-top: 30px;
+  }
+
+  .links ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .flex-container-1-1 a:hover {
+    color: #131313;
+  }
+
+  .grid-container-3-links li a:hover {
+    color: #999;
+  }
+
+  .socials ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials li {
+    margin: auto 5px;
+  }
+
+  .foot2 {
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+    padding: 30px;
+    font-size: 12px;
+  }
+
+  .foot2 span svg {
+    line-height: 2em;
+    width: 40px;
+    margin-right: 10px;
+  }
+}
+
+/* Tablet size */
+@media only screen and (min-width: 376px) and (max-width: 767px) {
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  .nav-top img {
+    background:
+      linear-gradient(
+        rgba(255, 31, 42, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      );
+    width: 95px;
+    height: 47px;
+  }
+
+  .flex-container-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .grid-container-1-1,
+  .grid-container-1-2,
+  .srch1,
+  .grid-container-1 .flex-container-2,
+  .flex-container-1-1 {
+    display: none;
+  }
+
+  .menu-toggle {
+    cursor: pointer;
+    color: #f42;
+    font-size: 10px;
+    padding-left: 10px;
+  }
+
+  .srch {
+    margin: 0;
+    color: #aaa;
+    padding: 10px;
+    border-left: 1px solid #aaa;
+  }
+
+  .srch .menu-bar {
+    display: none;
+  }
+
+  .flex-container-3 {
+    background-color: yellow;
+    height: 40px;
+    color: #131313;
+    padding-left: 30px;
+    position: fixed;
+    top: 47px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .flex-container-3 a {
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+    color: #131313;
+    font-size: 9px;
+  }
+
+  .flex-container-3 span {
+    position: absolute;
+    top: 6px;
+    right: 150px;
+  }
+
+  .grid-container-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #131313;
+    font-size: 12px;
+  }
+
+  .grid-container-1 img {
+    display: none;
+  }
+
+  .grid-container-1-1 li {
+    display: inline-flex;
+  }
+
+  .grid-container-1-2 li {
+    display: inline-flex;
+  }
+
+  .grid-container-1-1 a,
+  .grid-container-1-2 a {
+    color: hsla(0, 0%, 100%, 0.6);
+    margin: auto 10px;
+  }
+
+  .flex-container-1-1 li {
+    display: inline-flex;
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+
+  .f1 a {
+    color: #f42;
+  }
+
+  .socials a {
+    display: inline-flex;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .flex-container-1-1 a {
+    color: #aaa;
+  }
+
+  .grid-container-3-links li a {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .links ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .flex-container-1-1 a:hover {
+    color: #131313;
+  }
+
+  .art1-1 img {
+    visibility: hidden;
+    width: 75px;
+  }
+
+  .art1-1 {
+    margin-top: 10px;
+    position: relative;
+    background:
+      url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg")
+      no-repeat center;
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .f1 ul {
+    display: block !important;
+    margin-top: 15px;
+  }
+
+  .last span {
+    color: #999;
+  }
+
+  .f1 ul li a span {
+    display: none;
+  }
+
+  .fund-1-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .fund-1-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .fund-1-3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .fund-1-4 {
+    display: none !important;
+  }
+
+  .fund-1-1,
+  .fund-1-2,
+  .fund-1-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .f2 {
+    display: flex;
+    margin: 0 20px;
+  }
+
+  .funding .f2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 4px;
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  .grid-container-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 39px;
+  }
+
+  .first {
+    height: 30vh;
+    transition: background-color 0.4s ease;
+    background:
+      linear-gradient(
+        rgba(255, 31, 42, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      ),
+      url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c")
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    align-items: flex-start;
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  .topnews {
+    display: none;
+  }
+
+  .topnews p {
+    font-size: 14px;
+  }
+
+  .botnews h2 {
+    font-weight: 100;
+    margin-top: 30px;
+  }
+
+  .botnews h3 {
+    font-size: 20px;
+  }
+
+  .botnews p {
+    font-size: 12px;
+    vertical-align: middle;
+    bottom: 0;
+  }
+
+  .botnews i {
+    vertical-align: middle;
+    margin: auto 10px;
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    margin: auto 10px;
+  }
+
+  .second {
+    background:
+      url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")
+      no-repeat;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+
+  .third {
+    background:
+      url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg")
+      no-repeat;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+
+  .second,
+  .third {
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    align-items: flex-start;
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  /* Latest section */
+  .latest1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .latest1 .container {
+    margin-left: 0;
+  }
+
+  .latest {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .mytext h2 {
+    font-size: 16px;
+  }
+
+  .f1 h1 {
+    font-size: 24px;
+    color: #f42;
+    margin-left: 0;
+  }
+
+  .container h2:hover {
+    color: #f42;
+    cursor: pointer;
+  }
+
+  .container p {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 12px;
+  }
+
+  .topic {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f42;
+  }
+
+  .funding {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .f1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 10px;
+    color: #f42;
+  }
+
+  .grid-container-3-links li {
+    list-style: circle;
+    border-bottom: 0.1rem solid #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .socials li {
+    margin: auto 5px;
+  }
+
+  .f1 ul li {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .fund1 {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .grey-container {
+    width: 17%;
+    height: 31%;
+    background-color: rgb(216, 212, 212);
+    position: absolute;
+    top: 10px;
+    left: 9px;
+  }
+
+  .thriva {
+    background-color: #f42;
+    color: #fff;
+    height: 40px;
+  }
+
+  .thriva h1 {
+    color: #fff;
+    margin-left: 11%;
+    font-size: 14px;
+  }
+
+  .cash {
+    background-color: rgba(255, 68, 34, 0.08);
+    height: 60px;
+    color: #131313;
+  }
+
+  .cash p,
+  .cash h1 {
+    color: #555;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 11%;
+  }
+
+  .thriva,
+  .cash {
+    padding-left: 90px;
+    padding-top: 10px;
+  }
+
+  .fitness {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    background-color: rgba(236, 130, 112, 0.08);
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .fitness p span.texts-1 {
+    top: 4px;
+  }
+
+  .fitness p span.texts-2 {
+    top: 32px;
+  }
+
+  .last {
+    height: 30px;
+    background-color: rgba(236, 130, 112, 0.08);
+    border-top: 0.03rem solid #f42;
+    padding-top: 8px;
+    font-size: 14px;
+  }
+
+  /* Apps, Gears, tech etc section */
+
+  /* Grid Rows */
+  .grid-container-3 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+  }
+
+  .grid-container-3-1,
+  .grid-container-3-2,
+  .grid-container-3-3,
+  .grid-container-3-4,
+  .grid-container-3-5,
+  .grid-container-3-6,
+  .grid-container-3-7,
+  .grid-container-3-8 {
+    margin-bottom: 20px;
+  }
+
+  .red-headings {
+    color: #f42;
+    font-size: 25px;
+    margin: 20px 0;
+  }
+
+  .grey-headings {
+    color: #fff;
+    font-size: small;
+  }
+
+  .dark-grey-headings {
+    color: #fff;
+    font-size: large;
+  }
+
+  /* (Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bullet_color) */
+  .grid-container-3-links li::before {
+    list-style: circle;
+    content: "\2022";
+    color: #f42;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-shadow: 1px 1px 1px #f42;
+  }
+
+  .flex-container-4 {
+    background-color: rgb(245, 182, 193);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.05rem;
+  }
+
+  .flex-container-4-1 h3,
+  .flex-container-4-1 p {
+    color: #f42;
+    margin: 10px 10px;
+  }
+
+  .grid-container-3-links li a:hover {
+    color: #999;
+  }
+
+  .grid-container-3-image {
+    background:
+      url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")
+      no-repeat;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px 10px 0;
+  }
+
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+
+    /* align-items: flex-end; */
+    padding-top: 30%;
+    padding-left: 10px;
+  }
+
+  .heading-container .dark-grey-headings {
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .heading-container .author-info {
+    color: #fff;
+  }
+
+  .latest .topic {
+    margin-left: -4px;
+  }
+
+  .mytext,
+  .text {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  footer {
+    background-color: #131313;
+    color: #999;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .socials {
+    padding-top: 30px;
+  }
+
+  .links ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .socials ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .foot2 {
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+    padding: 30px;
+    font-size: 12px;
+  }
+
+  .foot2 span svg {
+    line-height: 2em;
+    width: 40px;
+    margin-right: 10px;
+  }
+}
+
+/* Laptop and desktop size */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-top {
+    display: block !important;
+    float: left;
+    background:
+      linear-gradient(
+        rgba(255, 31, 42, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      );
+    width: 10%;
+    height: 8%;
+  }
+
+  .nav-top img {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  .srch {
+    outline: 1px solid white;
+    visibility: hidden;
+  }
+
+  .topnews {
+    visibility: hidden;
+  }
+
+  .fund1.fund-1-1,
+  .fund1.fund-1-2,
+  .fund1.fund-1-3 {
+    width: 308px;
+  }
+
+  .f2 .fund-1-4 {
+    display: none;
+  }
+
+  .latest {
+    margin-top: 30px;
+  }
+
+  .latest1 {
+    display: flex;
+    width: 100%;
+  }
+
+  .latest1 .container {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    padding: 10px;
+  }
+
+  .art1-1 img {
+    visibility: hidden;
+    width: 100%;
+  }
+
+  .art1-1 {
+    margin-top: 10px;
+    position: relative;
+    background:
+      url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg")
+      no-repeat center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mytext {
+    margin-top: 20px;
+  }
+
+  .grid-container-3 {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0;
+  }
+
+  .grid-container-3-1,
+  .grid-container-3-2,
+  .grid-container-3-3,
+  .grid-container-3-4,
+  .grid-container-3-5,
+  .grid-container-3-6,
+  .grid-container-3-7,
+  .grid-container-3-8 {
+    width: 49%;
+    padding-left: 10px;
+  }
+
+  .grid-container-3-9 {
+    display: none !important;
+  }
+}
+
+/* Laptop and desktop size */
+@media only screen and (min-width: 768px) {
+  .latest,
+  .funding,
+  .grid-container-3 {
+    margin: auto 6vw !important;
+  }
+
+  .nav-top {
+    display: none;
+  }
+
+  .grid-container-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #131313;
+    font-size: 12px;
+  }
+
+  .grid-container-1 img {
+    display: none;
+  }
+
+  .grid-container-1-1 li {
+    display: inline-flex;
+  }
+
+  .grid-container-1-2 li {
+    display: inline-flex;
+  }
+
+  .grid-container-1-1 a,
+  .grid-container-1-2 a {
+    color: hsla(0, 0%, 100%, 0.6);
+    margin: auto 10px;
+  }
+
+  .flex-container-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex-container-1-1 li {
+    display: inline-flex;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+
+  .flex-container-1-1 a {
+    color: #aaa;
+  }
+
+  /* (Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bullet_color) */
+  .grid-container-3-links li::before {
+    list-style: circle;
+    content: "\2022";
+    color: #f42;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-shadow: 1px 1px 1px #f42;
+  }
+
+  .srch {
+    margin: 0;
+    color: #aaa;
+    padding: 10px;
+    border-left: 1px solid #aaa;
+  }
+
+  .srch .menu-bar {
+    display: none;
+  }
+
+  .flex-container-3 {
+    position: relative;
+    background-color: yellow;
+    height: 40px;
+    color: #131313;
+    padding-left: 10px;
+  }
+
+  .flex-container-3 a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+    color: #131313;
+    position: absolute;
+  }
+
+  .flex-container-3 span {
+    position: absolute;
+    left: 410px;
+  }
+
+  .grid-container-2 {
+    display: flex;
+    height: 100%;
+  }
+
+  .first {
+    width: 66%;
+    transition: background-color 0.4s ease;
+    background:
+      linear-gradient(
+        rgba(255, 31, 42, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      ),
+      url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Fjustas-vinted-gq-1.png&signature=8ff7d41b915ad990a310ad8f24d64b7c")
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .topnews {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .topnews p {
+    font-size: 14px;
+  }
+
+  .topnews img {
+    width: 50%;
+    height: 100px;
+  }
+
+  .botnews h2 {
+    font-weight: 100;
+    margin: 20px auto;
+  }
+
+  .botnews h3 {
+    font-size: 50px;
+    margin: 20px auto;
+    font-weight: 800;
+  }
+
+  .botnews p {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+
+  .botnews i {
+    vertical-align: middle;
+    margin: auto 10px;
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+    margin: 10px 10px 10px 0;
+  }
+
+  .second {
+    background:
+      url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")
+      no-repeat;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px 10px 0;
+  }
+
+  .third {
+    background:
+      url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/rivian-factories-closing-coronavirus-impact-shutdown-pandemic-who-tesla-cars-EV-796x448.jpg")
+      no-repeat;
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .second,
+  .third {
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    align-items: flex-end;
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+
+  /* Latest section */
+  .latest {
+    margin-top: 30px;
+  }
+
+  .latest1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-right: 20px;
+  }
+
+  .art1-1 img {
+    visibility: hidden;
+    width: 100%;
+  }
+
+  .art1-1 {
+    margin-top: 10px;
+    position: relative;
+    background:
+      url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-27-516x270.jpg")
+      no-repeat center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .f1 h1 {
+    font-size: 24px;
+  }
+
+  .mytext {
+    margin: 20px 0;
+  }
+
+  .mytext h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .container h2:hover {
+    color: #f42;
+    cursor: pointer;
+  }
+
+  .container p {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 12px;
+  }
+
+  .topic {
+    margin: 30px 0;
+    font-size: 24px;
+    color: #f42;
+  }
+
+  .funding {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .f1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    color: #f42;
+  }
+
+  .f1 ul {
+    line-height: 1.6em;
+    display: flex;
+    font-size: 14px;
+  }
+
+  .f2 {
+    display: flex;
+    margin: 0;
+  }
+
+  .fund1 {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .grey-container {
+    width: 20%;
+    height: 25%;
+    background-color: rgb(216, 212, 212);
+    position: absolute;
+    top: 10px;
+    left: 9px;
+  }
+
+  .thriva {
+    background-color: #f42;
+    color: #fff;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .cash {
+    background-color: rgba(255, 68, 34, 0.08);
+    height: 60px;
+    color: #131313;
+  }
+
+  .cash p {
+    color: #555;
+  }
+
+  .thriva,
+  .cash {
+    padding-left: 90px;
+    padding-top: 10px;
+  }
+
+  .fitness {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    background-color: rgba(236, 130, 112, 0.08);
+    padding-left: 6px;
+    position: relative;
+  }
+
+  .fitness p span.texts-1 {
+    position: absolute;
+    top: 4px;
+  }
+
+  .fitness p span.texts-2 {
+    position: absolute;
+    top: 32px;
+  }
+
+  .last {
+    height: 30px;
+    background-color: rgba(236, 130, 112, 0.08);
+    border-top: 0.03rem solid #f42;
+    padding-top: 8px;
+    font-size: 14px;
+  }
+
+  .last span {
+    color: #999;
+  }
+
+  /* Apps, Gears, tech etc section */
+
+  /* Grid Rows */
+  .grid-container-3-1,
+  .grid-container-3-2,
+  .grid-container-3-3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .grid-container-3-4,
+  .grid-container-3-5,
+  .grid-container-3-6 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .grid-container-3-7,
+  .grid-container-3-8,
+  .grid-container-3-9 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  /* Grid Columns */
+  .grid-container-3-1,
+  .grid-container-3-4,
+  .grid-container-3-7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .grid-container-3-2,
+  .grid-container-3-5,
+  .grid-container-3-8 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .grid-container-3-3,
+  .grid-container-3-6,
+  .grid-container-3-9 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 10px 20px;
+    grid-column-gap: 24px;
+    grid-row-gap: 25px;
+    padding-top: 40px;
+  }
+
+  .red-headings {
+    color: #f42;
+    font-size: 25px;
+    margin: 30px auto;
+  }
+
+  .grid-container-3-image {
+    background:
+      url("https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/bg-hero-sprint.jpg")
+      no-repeat;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px 10px 0;
+  }
+
+  .heading-container {
+    color: #fff;
+    padding-top: 30%;
+    padding-left: 20px;
+  }
+
+  .grey-headings {
+    color: #fff;
+    font-size: small;
+  }
+
+  .dark-grey-headings {
+    color: #fff;
+    font-size: large;
+  }
+
+  .flex-container-4 {
+    background-color: rgb(245, 182, 193);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.05rem;
+  }
+
+  .flex-container-4-1 h3,
+  .flex-container-4-1 p {
+    color: #f42;
+    margin: 10px 10px;
+  }
+
+  .f1 a {
+    color: #f42;
+  }
+
+  .socials a {
+    display: inline-flex;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .grid-container-3-links li a {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .links ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .flex-container-1-1 a:hover {
+    color: #131313;
+  }
+
+  .grid-container-3-links li a:hover {
+    color: #999;
+  }
+
+  .grid-container-3-links li {
+    border-bottom: 0.1rem solid #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  footer {
+    background-color: #131313;
+    color: #999;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .socials {
+    padding-top: 30px;
+  }
+
+  .links ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .socials ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials li {
+    margin: auto 5px;
+  }
+
+  .foot2 {
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+    padding: 30px;
+    font-size: 12px;
+  }
+
+  .foot2 span svg {
+    line-height: 2em;
+    width: 40px;
+    margin-right: 10px;
+  }
 }
